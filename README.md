@@ -2,6 +2,7 @@
 
 [![Build Status][travis-image]][travis-url]
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Coverage Status](https://coveralls.io/repos/github/alecxe/eslint-plugin-protractor/badge.svg?branch=master)](https://coveralls.io/github/alecxe/eslint-plugin-protractor?branch=master)
 
 [travis-url]: https://travis-ci.org/alecxe/eslint-plugin-protractor
 [travis-image]: https://img.shields.io/travis/alecxe/eslint-plugin-protractor.svg
