@@ -41,7 +41,7 @@ property:
 plugins:
   - protractor
 rules:
-  jasmine/missing-perform: 0
+  protractor/missing-perform: 0
 ```
 
 See [configuring rules][] for more information.
