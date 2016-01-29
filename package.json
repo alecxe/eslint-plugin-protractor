@@ -1,6 +1,7 @@
 {
   "name": "eslint-plugin-protractor",
   "description": "ESLint rules for Protractor",
+  "version": "0.0.0-semantically-released",
   "main": "index.js",
   "directories": {
     "doc": "docs",
