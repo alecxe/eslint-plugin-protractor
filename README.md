@@ -1,10 +1,10 @@
 # eslint-plugin-protractor
 
 [![Build Status][travis-image]][travis-url]
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 [travis-url]: https://travis-ci.org/alecxe/eslint-plugin-protractor
 [travis-image]: https://img.shields.io/travis/alecxe/eslint-plugin-protractor.svg
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 
 > ESLint rules for Protractor
 
