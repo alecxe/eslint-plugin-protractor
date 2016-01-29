@@ -6,6 +6,16 @@ bin-release/
 # Other files and folders
 .settings/
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+/node_modules
+coverage/
+build/
+npm-debug.log
+.DS_Store
+tmp/
+.idea
+jsdoc/
+versions.json
+*.iml
+.eslintcache
+.cache
+/packages/**/node_modules
