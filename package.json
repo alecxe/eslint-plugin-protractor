@@ -10,7 +10,8 @@
     "pretest": "standard",
     "test": "mocha",
     "watch": "mocha --watch",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "keywords": [
     "eslint",
@@ -29,7 +30,9 @@
   },
   "homepage": "https://github.com/alecxe/eslint-plugin-protractor",
   "devDependencies": {
+    "coveralls": "^2.11.4",
     "eslint": "^1.8.0",
+    "istanbul": "^0.4.2",
     "mocha": "^2.2.5",
     "semantic-release": "^4.0.2",
     "standard": "^5.3.1"
