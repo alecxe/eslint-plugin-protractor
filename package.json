@@ -31,11 +31,18 @@
   },
   "homepage": "https://github.com/alecxe/eslint-plugin-protractor",
   "devDependencies": {
+    "commitizen": "^2.5.0",
     "coveralls": "^2.11.4",
+    "cz-conventional-changelog": "^1.1.5",
     "eslint": "^1.8.0",
     "istanbul": "^0.4.2",
     "mocha": "^2.2.5",
     "semantic-release": "^4.0.2",
     "standard": "^5.3.1"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
