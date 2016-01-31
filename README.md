@@ -33,7 +33,7 @@ This plugin ships with a default configuration for each rule:
 Rule                         | Default       | Options
 ----                         | -------       | -------
 [missing-perform][]          | 2             |
-
+[missing-wait-message][]     | 1             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
 ESLint to throw an error (with an exit code of `1`) when triggered.
@@ -51,6 +51,7 @@ rules:
 See [configuring rules][] for more information.
 
 [missing-perform]: docs/rules/missing-perform.md
+[missing-wait-message]: docs/rules/missing-wait-message.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Author
