@@ -7,6 +7,7 @@ module.exports = {
   },
   rulesConfig: {
     'missing-perform': 2,
-    'missing-wait-message': 1
+    'missing-wait-message': 1,
+    'no-browser-sleep': 1
   }
 }
