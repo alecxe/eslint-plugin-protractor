@@ -5,7 +5,7 @@ Ensure `perform()` is called on `browser.actions()` chain of actions.
 ## Rule details
 
 This rule triggers an error if there is no `perform()` at the end of the `browser.actions()` chain. 
-Note that there has to be at least one applied action to trigger the rule. In other words, `var actions = browser.actions();` is a considered valid since it is quite a common pattern.
+Note that there has to be at least one applied action to trigger the rule. In other words, `var actions = browser.actions();` is considered valid since it is quite a common pattern.
 
 The following patterns are considered errors:
 
