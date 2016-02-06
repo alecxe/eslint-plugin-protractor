@@ -35,6 +35,7 @@ Rule                         | Default       | Options
 [missing-perform][]          | 2             |
 [missing-wait-message][]     | 1             |
 [no-browser-sleep][]         | 1             |
+[no-by-xpath][]              | 1             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
 ESLint to throw an error (with an exit code of `1`) when triggered.
@@ -54,6 +55,7 @@ See [configuring rules][] for more information.
 [missing-perform]: docs/rules/missing-perform.md
 [missing-wait-message]: docs/rules/missing-wait-message.md
 [no-browser-sleep]: docs/rules/no-browser-sleep.md
+[no-by-xpath]: docs/rules/no-by-xpath.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Author
