@@ -33,6 +33,7 @@ This plugin ships with a default configuration for each rule:
 Rule                         | Default       | Options
 ----                         | -------       | -------
 [missing-perform][]          | 2             |
+[no-browser-pause][]         | 2             |
 [missing-wait-message][]     | 1             |
 [no-browser-sleep][]         | 1             |
 [no-by-xpath][]              | 1             |
@@ -53,6 +54,7 @@ rules:
 See [configuring rules][] for more information.
 
 [missing-perform]: docs/rules/missing-perform.md
+[no-browser-pause]: docs/rules/no-browser-pause.md
 [missing-wait-message]: docs/rules/missing-wait-message.md
 [no-browser-sleep]: docs/rules/no-browser-sleep.md
 [no-by-xpath]: docs/rules/no-by-xpath.md
