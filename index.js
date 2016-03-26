@@ -9,12 +9,16 @@ module.exports = {
     'no-by-xpath': require('./lib/rules/no-by-xpath'),
     'no-describe-selectors': require('./lib/rules/no-describe-selectors')
   },
-  rulesConfig: {
-    'missing-perform': 2,
-    'no-browser-pause': 2,
-    'missing-wait-message': 1,
-    'no-browser-sleep': 1,
-    'no-by-xpath': 1,
-    'no-describe-selectors': 1
+  configs: {
+    recommended: {
+      rules: {
+        'missing-perform': 2,
+        'no-browser-pause': 2,
+        'missing-wait-message': 1,
+        'no-browser-sleep': 1,
+        'no-by-xpath': 1,
+        'no-describe-selectors': 1
+      }
+    }
   }
 }

@@ -62,6 +62,23 @@ See [configuring rules][] for more information.
 [no-describe-selectors]: docs/rules/no-describe-selectors.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
+## Recommended configuration
+
+This plugin export a `recommended` configuration that enforce good practices.
+
+To enable this configuration use the `extends` property in your `.eslintrc` config file:
+
+```js
+{
+  "plugins": [
+    "protractor"
+  ],
+  "extends": "plugin:protractor/recommended"
+}
+```
+
+See [ESLint documentation](http://eslint.org/docs/user-guide/configuring#extending-configuration-files) for more information about extending configuration files.
+
 ## Author
 
 © 2016 Alexander Afanasyev
