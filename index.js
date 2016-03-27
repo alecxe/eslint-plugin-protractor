@@ -12,12 +12,12 @@ module.exports = {
   configs: {
     recommended: {
       rules: {
-        'missing-perform': 2,
-        'no-browser-pause': 2,
-        'missing-wait-message': 1,
-        'no-browser-sleep': 1,
-        'no-by-xpath': 1,
-        'no-describe-selectors': 1
+        'protractor/missing-perform': 2,
+        'protractor/no-browser-pause': 2,
+        'protractor/missing-wait-message': 1,
+        'protractor/no-browser-sleep': 1,
+        'protractor/no-by-xpath': 1,
+        'protractor/no-describe-selectors': 1
       }
     }
   }
