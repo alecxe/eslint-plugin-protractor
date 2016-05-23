@@ -38,6 +38,7 @@ Rule                         | Default       | Options
 [no-browser-sleep][]         | 1             |
 [no-by-xpath][]              | 1             |
 [no-describe-selectors][]    | 1             |
+[by-css-shortcut][]          | 0             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
 ESLint to throw an error (with an exit code of `1`) when triggered.
@@ -60,6 +61,7 @@ See [configuring rules][] for more information.
 [no-browser-sleep]: docs/rules/no-browser-sleep.md
 [no-by-xpath]: docs/rules/no-by-xpath.md
 [no-describe-selectors]: docs/rules/no-describe-selectors.md
+[by-css-shortcut]: docs/rules/by-css-shortcut.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration

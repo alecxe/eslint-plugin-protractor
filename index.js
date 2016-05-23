@@ -7,7 +7,8 @@ module.exports = {
     'missing-wait-message': require('./lib/rules/missing-wait-message'),
     'no-browser-sleep': require('./lib/rules/no-browser-sleep'),
     'no-by-xpath': require('./lib/rules/no-by-xpath'),
-    'no-describe-selectors': require('./lib/rules/no-describe-selectors')
+    'no-describe-selectors': require('./lib/rules/no-describe-selectors'),
+    'by-css-shortcut': require('./lib/rules/by-css-shortcut')
   },
   configs: {
     recommended: {
@@ -17,7 +18,8 @@ module.exports = {
         'protractor/missing-wait-message': 1,
         'protractor/no-browser-sleep': 1,
         'protractor/no-by-xpath': 1,
-        'protractor/no-describe-selectors': 1
+        'protractor/no-describe-selectors': 1,
+        'protractor/by-css-shortcut': 0
       }
     }
   }
