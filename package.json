@@ -38,7 +38,7 @@
     "istanbul": "^0.4.2",
     "mocha": "^2.2.5",
     "semantic-release": "^4.0.2",
-    "standard": "^6.0.8"
+    "standard": "^7.1.0"
   },
   "config": {
     "commitizen": {
