@@ -8,7 +8,8 @@ module.exports = {
     'no-browser-sleep': require('./lib/rules/no-browser-sleep'),
     'no-by-xpath': require('./lib/rules/no-by-xpath'),
     'no-describe-selectors': require('./lib/rules/no-describe-selectors'),
-    'by-css-shortcut': require('./lib/rules/by-css-shortcut')
+    'by-css-shortcut': require('./lib/rules/by-css-shortcut'),
+    'no-angular-classes': require('./lib/rules/no-angular-classes')
   },
   configs: {
     recommended: {
@@ -19,6 +20,7 @@ module.exports = {
         'protractor/no-browser-sleep': 1,
         'protractor/no-by-xpath': 1,
         'protractor/no-describe-selectors': 1,
+        'protractor/no-angular-classes': 1,
         'protractor/by-css-shortcut': 0
       }
     }
