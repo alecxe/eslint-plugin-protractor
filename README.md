@@ -40,6 +40,7 @@ Rule                         | Default       | Options
 [no-describe-selectors][]    | 1             |
 [no-angular-classes][]       | 1             |
 [use-angular-locators][]     | 1             |
+[use-simple-repeaters][]     | 1             |
 [by-css-shortcut][]          | 0             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
@@ -65,6 +66,7 @@ See [configuring rules][] for more information.
 [no-describe-selectors]: docs/rules/no-describe-selectors.md
 [no-angular-classes]: docs/rules/no-angular-classes.md
 [use-angular-locators]: docs/rules/use-angular-locators.md
+[use-simple-repeaters]: docs/rules/use-simple-repeaters.md
 [by-css-shortcut]: docs/rules/by-css-shortcut.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 

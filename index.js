@@ -10,7 +10,8 @@ module.exports = {
     'no-describe-selectors': require('./lib/rules/no-describe-selectors'),
     'by-css-shortcut': require('./lib/rules/by-css-shortcut'),
     'no-angular-classes': require('./lib/rules/no-angular-classes'),
-    'use-angular-locators': require('./lib/rules/use-angular-locators')
+    'use-angular-locators': require('./lib/rules/use-angular-locators'),
+    'use-simple-repeaters': require('./lib/rules/use-simple-repeaters')
   },
   configs: {
     recommended: {
@@ -23,6 +24,7 @@ module.exports = {
         'protractor/no-describe-selectors': 1,
         'protractor/no-angular-classes': 1,
         'protractor/use-angular-locators': 1,
+        'protractor/use-simple-repeaters': 1,
         'protractor/by-css-shortcut': 0
       }
     }
