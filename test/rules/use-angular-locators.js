@@ -11,7 +11,8 @@ eslintTester.run('use-angular-locators', rule, {
     'element(by.binding("test"));',
     'element(by.exactBinding("test"));',
     'element.all(by.repeater("item in items"));',
-    'element.all(by.exactRepeater("item in items"));'
+    'element.all(by.exactRepeater("item in items"));',
+    'element.all(by.options("item in items"));'
   ],
 
   invalid: [
@@ -60,6 +61,22 @@ eslintTester.run('use-angular-locators', rule, {
       errors: [
         {
           message: 'Unexpected "ng-repeat" attribute used inside a CSS selector. Use by.repeater() or by.exactRepeater() locator instead'
+        }
+      ]
+    },
+    {
+      code: 'element(by.id("test")).$(\'[ng-options="item in items"]\');',
+      errors: [
+        {
+          message: 'Unexpected "ng-options" attribute used inside a CSS selector. Use by.options() locator instead'
+        }
+      ]
+    },
+    {
+      code: 'element(by.id("test")).$$(\'[data-ng-options="item in items"]\');',
+      errors: [
+        {
+          message: 'Unexpected "ng-options" attribute used inside a CSS selector. Use by.options() locator instead'
         }
       ]
     }
