@@ -17,7 +17,11 @@ eslintTester.run('no-angular-classes', rule, {
     '$$(".myotherclass.myclass");',
     '$("input.myclass");',
     'var s = "ng-scope";',
-    'element(by.id("ng-isolate-scope"));'
+    'element(by.id("ng-isolate-scope"));',
+    '$();',
+    '$$();',
+    'element(by.css());',
+    'element.all(by.css());'
   ],
 
   invalid: [
