@@ -5,6 +5,7 @@ cache:
     - node_modules
 notifications:
   email: false
+  slack: eslint-protractor:Qcx63DxJENWs9s6Z5Tgqygq0
 node_js:
   - '0.10'
 before_install:
