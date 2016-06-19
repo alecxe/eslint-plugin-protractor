@@ -8,6 +8,12 @@ notifications:
   slack: eslint-protractor:Qcx63DxJENWs9s6Z5Tgqygq0
 node_js:
   - '0.10'
+  - '0.12'
+  - '4'
+  - '5'
+  - '6'
+  - 'iojs'
+  - 'node'
 before_install:
   - npm i -g npm@^2.0.0
 before_script:
