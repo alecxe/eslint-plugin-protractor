@@ -21,6 +21,10 @@
     "protractor"
   ],
   "author": "Alexander Afanasyev <afanasieffav@gmail.com>",
+  "contributors": [
+    "Darin Kadrioski <darin.kadrioski@teamaol.com>",
+    "David Raynes <rayners@gmail.com>"
+  ],
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -30,11 +34,14 @@
     "url": "https://github.com/alecxe/eslint-plugin-protractor/issues"
   },
   "homepage": "https://github.com/alecxe/eslint-plugin-protractor",
+  "peerDependencies": {
+    "eslint": "^2.0.0"
+  },
   "devDependencies": {
     "commitizen": "^2.8.1",
     "coveralls": "^2.11.9",
     "cz-conventional-changelog": "^1.1.6",
-    "eslint": "^2.10.2",
+    "eslint": "^2.0.0",
     "istanbul": "^0.4.3",
     "mocha": "^2.5.1",
     "semantic-release": "^4.3.5",
