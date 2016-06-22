@@ -35,6 +35,7 @@ Rule                         | Default       | Options
 ----                         | -------       | -------
 [missing-perform][]          | 2             |
 [no-browser-pause][]         | 2             |
+[no-shadowing][]             | 2             |
 [missing-wait-message][]     | 1             |
 [no-browser-sleep][]         | 1             |
 [no-by-xpath][]              | 1             |
@@ -61,6 +62,7 @@ See [configuring rules][] for more information.
 
 [missing-perform]: docs/rules/missing-perform.md
 [no-browser-pause]: docs/rules/no-browser-pause.md
+[no-shadowing]: docs/rules/no-shadowing.md
 [missing-wait-message]: docs/rules/missing-wait-message.md
 [no-browser-sleep]: docs/rules/no-browser-sleep.md
 [no-by-xpath]: docs/rules/no-by-xpath.md
