@@ -35,7 +35,6 @@ Rule                         | Default       | Options
 ----                         | -------       | -------
 [missing-perform][]          | 2             |
 [no-browser-pause][]         | 2             |
-[no-shadowing][]             | 2             |
 [missing-wait-message][]     | 1             |
 [no-browser-sleep][]         | 1             |
 [no-by-xpath][]              | 1             |
@@ -43,6 +42,7 @@ Rule                         | Default       | Options
 [no-angular-classes][]       | 1             |
 [use-angular-locators][]     | 1             |
 [use-simple-repeaters][]     | 1             |
+[no-shadowing][]             | 1             |
 [by-css-shortcut][]          | 0             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
@@ -62,7 +62,6 @@ See [configuring rules][] for more information.
 
 [missing-perform]: docs/rules/missing-perform.md
 [no-browser-pause]: docs/rules/no-browser-pause.md
-[no-shadowing]: docs/rules/no-shadowing.md
 [missing-wait-message]: docs/rules/missing-wait-message.md
 [no-browser-sleep]: docs/rules/no-browser-sleep.md
 [no-by-xpath]: docs/rules/no-by-xpath.md
@@ -70,6 +69,7 @@ See [configuring rules][] for more information.
 [no-angular-classes]: docs/rules/no-angular-classes.md
 [use-angular-locators]: docs/rules/use-angular-locators.md
 [use-simple-repeaters]: docs/rules/use-simple-repeaters.md
+[no-shadowing]: docs/rules/no-shadowing.md
 [by-css-shortcut]: docs/rules/by-css-shortcut.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
