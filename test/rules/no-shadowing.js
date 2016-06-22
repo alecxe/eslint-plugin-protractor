@@ -13,8 +13,7 @@ eslintTester.run('no-shadowing', rule, {
     'var elm = $(".myclass");',
     'var elements = $$(".myclass");',
     'for (var i = 0; i < variables.length; ++i) {}',
-    'try { json = JSON.parse(input) } catch (e) {}',
-    'switch (a) { case 1: break; default: break; }'
+    'try { json = JSON.parse(input) } catch (e) {}'
   ],
 
   invalid: [
@@ -76,14 +75,6 @@ eslintTester.run('no-shadowing', rule, {
     },
     {
       code: 'try { json = JSON.parse(input) } catch (browser) {}',
-      errors: [
-        {
-          message: 'Unexpected Protractor built-in global variable shadowing'
-        }
-      ]
-    },
-    {
-      code: 'switch (element) { case 1: break; default: break; }',
       errors: [
         {
           message: 'Unexpected Protractor built-in global variable shadowing'

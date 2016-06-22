@@ -24,7 +24,6 @@ var $ = 1;
 var a = 2, $$ = 3;
 for (var by = 0; by < 10; ++by) {}
 try { json = JSON.parse(input) } catch (browser) {}
-switch (element) { case 1: break; default: break; }
 ```
 
 The following patterns are not warnings:
@@ -37,5 +36,4 @@ var elm = $(".myclass");
 var elements = $$(".myclass");
 for (var i = 0; i < 10; ++i) {}
 try { json = JSON.parse(input) } catch (e) {}
-switch (a) { case 1: break; default: break; }
 ```
