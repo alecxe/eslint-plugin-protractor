@@ -16,7 +16,8 @@ eslintTester.run('use-first-last', rule, {
     '$$(".class").get(10);',
     'element(by.id("id")).$$(".class").get(-10);',
     'var myMap = new Map(); myMap.get(0);',
-    'var myMap = new Map(); myMap.get(-1);'
+    'var myMap = new Map(); myMap.get(-1);',
+    'var myMap = new Map(); myMap.get();'
   ],
 
   invalid: [
