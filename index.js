@@ -12,7 +12,8 @@ module.exports = {
     'no-angular-classes': require('./lib/rules/no-angular-classes'),
     'use-angular-locators': require('./lib/rules/use-angular-locators'),
     'use-simple-repeaters': require('./lib/rules/use-simple-repeaters'),
-    'no-shadowing': require('./lib/rules/no-shadowing')
+    'no-shadowing': require('./lib/rules/no-shadowing'),
+    'use-first-last': require('./lib/rules/use-first-last')
   },
   configs: {
     recommended: {
@@ -27,6 +28,7 @@ module.exports = {
         'protractor/use-angular-locators': 1,
         'protractor/use-simple-repeaters': 1,
         'protractor/no-shadowing': 1,
+        'protractor/use-first-last': 1,
         'protractor/by-css-shortcut': 0
       }
     }

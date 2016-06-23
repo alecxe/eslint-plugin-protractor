@@ -43,6 +43,7 @@ Rule                         | Default       | Options
 [use-angular-locators][]     | 1             |
 [use-simple-repeaters][]     | 1             |
 [no-shadowing][]             | 1             |
+[use-first-last][]           | 1             |
 [by-css-shortcut][]          | 0             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
@@ -70,6 +71,7 @@ See [configuring rules][] for more information.
 [use-angular-locators]: docs/rules/use-angular-locators.md
 [use-simple-repeaters]: docs/rules/use-simple-repeaters.md
 [no-shadowing]: docs/rules/no-shadowing.md
+[use-first-last]: docs/rules/use-first-last.md
 [by-css-shortcut]: docs/rules/by-css-shortcut.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
