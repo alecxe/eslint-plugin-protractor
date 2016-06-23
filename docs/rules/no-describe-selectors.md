@@ -13,6 +13,7 @@ describe(function () {
   // Protractor selectors:
   element(by.addLocator('newLocator', function () { } ));
   element(by.binding('something.binding'));
+  element(by.exactBinding('something.binding'));
   element(by.model('something.model'));
   element(by.buttonText('buttonText'));
   element(by.partialButtonText('partialButtonText'));

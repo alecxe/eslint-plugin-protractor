@@ -1,6 +1,6 @@
 # Recommend using `first()` instead of `get(0)` and `last()` instead of `get(-1)`
 
-The `first()` and `last()` shortcuts is, generally speaking, more readable than `get(0)` and `get(-1)`.
+The `first()` and `last()` shortcuts are, generally speaking, more readable than `get(0)` and `get(-1)`.
 
 ## Rule details
 
