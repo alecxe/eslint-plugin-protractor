@@ -1,19 +1,32 @@
 'use strict'
 
+var missingPerform = require('./lib/rules/missing-perform')
+var noBrowserPause = require('./lib/rules/no-browser-pause')
+var missingWaitMessage = require('./lib/rules/missing-wait-message')
+var noBrowserSleep = require('./lib/rules/no-browser-sleep')
+var noByXpath = require('./lib/rules/no-by-xpath')
+var noDescribeSelectors = require('./lib/rules/no-describe-selectors')
+var byCssShortcut = require('./lib/rules/by-css-shortcut')
+var noAngularClasses = require('./lib/rules/no-angular-classes')
+var useAngularLocators = require('./lib/rules/use-angular-locators')
+var useSimpleRepeaters = require('./lib/rules/use-simple-repeaters')
+var noShadowing = require('./lib/rules/no-shadowing')
+var useFirstLast = require('./lib/rules/use-first-last')
+
 module.exports = {
   rules: {
-    'missing-perform': require('./lib/rules/missing-perform'),
-    'no-browser-pause': require('./lib/rules/no-browser-pause'),
-    'missing-wait-message': require('./lib/rules/missing-wait-message'),
-    'no-browser-sleep': require('./lib/rules/no-browser-sleep'),
-    'no-by-xpath': require('./lib/rules/no-by-xpath'),
-    'no-describe-selectors': require('./lib/rules/no-describe-selectors'),
-    'by-css-shortcut': require('./lib/rules/by-css-shortcut'),
-    'no-angular-classes': require('./lib/rules/no-angular-classes'),
-    'use-angular-locators': require('./lib/rules/use-angular-locators'),
-    'use-simple-repeaters': require('./lib/rules/use-simple-repeaters'),
-    'no-shadowing': require('./lib/rules/no-shadowing'),
-    'use-first-last': require('./lib/rules/use-first-last')
+    'missing-perform': missingPerform,
+    'no-browser-pause': noBrowserPause,
+    'missing-wait-message': missingWaitMessage,
+    'no-browser-sleep': noBrowserSleep,
+    'no-by-xpath': noByXpath,
+    'no-describe-selectors': noDescribeSelectors,
+    'by-css-shortcut': byCssShortcut,
+    'no-angular-classes': noAngularClasses,
+    'use-angular-locators': useAngularLocators,
+    'use-simple-repeaters': useSimpleRepeaters,
+    'no-shadowing': noShadowing,
+    'use-first-last': useFirstLast
   },
   configs: {
     recommended: {
