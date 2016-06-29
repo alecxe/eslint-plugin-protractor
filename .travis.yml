@@ -6,6 +6,11 @@ cache:
 notifications:
   email: false
   slack: eslint-protractor:Qcx63DxJENWs9s6Z5Tgqygq0
+webhooks:
+  urls:
+    -  https://webhooks.gitter.im/e/adff3996681bbaef4a61
+  on_success: always
+  on_failure: always
 node_js:
   - '0.10'
   - '0.12'
