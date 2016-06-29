@@ -32,7 +32,9 @@ describe('eslint-plugin-protractor', function () {
     ruleFiles.forEach(function (file) {
       var ruleName = path.basename(file, '.js')
 
-      expect(plugin).to.have.deep.property('configs.recommended.rules').that.has.property('protractor/' + ruleName)
+      expect(plugin).to.have.deep.property('configs.recommended.rules')
+        .that.has.property('protractor/' + ruleName)
+        .that.is.oneOf([0, 1, 2, 'off', 'warn', 'error'])
     })
   })
 
