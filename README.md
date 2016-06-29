@@ -1,17 +1,17 @@
 # eslint-plugin-protractor
 
-[![Join the chat at https://gitter.im/alecxe/eslint-plugin-protractor](https://badges.gitter.im/alecxe/eslint-plugin-protractor.svg)](https://gitter.im/alecxe/eslint-plugin-protractor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-
-[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![npm version](https://img.shields.io/npm/v/eslint-plugin-protractor.svg)](https://www.npmjs.com/package/eslint-plugin-protractor)
 [![Build Status](https://img.shields.io/travis/alecxe/eslint-plugin-protractor.svg)](https://travis-ci.org/alecxe/eslint-plugin-protractor)
-[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
 [![Code Climate](https://codeclimate.com/github/alecxe/eslint-plugin-protractor/badges/gpa.svg)](https://codeclimate.com/github/alecxe/eslint-plugin-protractor)
 [![Package Quality](http://npm.packagequality.com/shield/eslint-plugin-protractor.svg)](http://packagequality.com/#?package=eslint-plugin-protractor)
 [![Coverage Status](https://coveralls.io/repos/github/alecxe/eslint-plugin-protractor/badge.svg?branch=master)](https://coveralls.io/github/alecxe/eslint-plugin-protractor?branch=master)
 [![devDependency Status](https://david-dm.org/alecxe/eslint-plugin-protractor/master/dev-status.svg)](https://david-dm.org/alecxe/eslint-plugin-protractor/master#info=devDependencies)
+
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
+[![Join the chat at https://gitter.im/alecxe/eslint-plugin-protractor](https://badges.gitter.im/alecxe/eslint-plugin-protractor.svg)](https://gitter.im/alecxe/eslint-plugin-protractor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 > ESLint rules for Protractor
 
