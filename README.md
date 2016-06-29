@@ -1,5 +1,7 @@
 # eslint-plugin-protractor
 
+[![Join the chat at https://gitter.im/alecxe/eslint-plugin-protractor](https://badges.gitter.im/alecxe/eslint-plugin-protractor.svg)](https://gitter.im/alecxe/eslint-plugin-protractor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![npm version](https://img.shields.io/npm/v/eslint-plugin-protractor.svg)](https://www.npmjs.com/package/eslint-plugin-protractor)
 [![Build Status](https://img.shields.io/travis/alecxe/eslint-plugin-protractor.svg)](https://travis-ci.org/alecxe/eslint-plugin-protractor)
