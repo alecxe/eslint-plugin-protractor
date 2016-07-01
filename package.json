@@ -45,7 +45,7 @@
     "commitizen": "^2.8.1",
     "coveralls": "^2.11.9",
     "cz-conventional-changelog": "^1.1.6",
-    "eslint": "^2.0.0",
+    "eslint": ">=2.0.0",
     "istanbul": "^0.4.3",
     "mocha": "^2.5.1",
     "semantic-release": "^4.3.5",
