@@ -43,6 +43,16 @@ module.exports = {
         'protractor/no-shadowing': 1,
         'protractor/use-first-last': 1,
         'protractor/by-css-shortcut': 0
+      },
+      globals: {
+        'browser': false,
+        'protractor': false,
+        'by': false,
+        'By': false,
+        'element': false,
+        '$': false,
+        '$$': false,
+        'ExpectedConditions': false
       }
     }
   }
