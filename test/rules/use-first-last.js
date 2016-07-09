@@ -27,7 +27,8 @@ eslintTester.run('use-first-last', rule, {
         {
           message: 'Unexpected "get(0)" call, use "first()" instead'
         }
-      ]
+      ],
+      output: 'element.all(by.css(".class")).first();'
     },
     {
       code: 'element(by.id("id")).all(by.css(".class")).get(-1);',
@@ -35,7 +36,8 @@ eslintTester.run('use-first-last', rule, {
         {
           message: 'Unexpected "get(-1)" call, use "last()" instead'
         }
-      ]
+      ],
+      output: 'element(by.id("id")).all(by.css(".class")).last();'
     },
     {
       code: '$$(".class").get(0);',
@@ -43,7 +45,8 @@ eslintTester.run('use-first-last', rule, {
         {
           message: 'Unexpected "get(0)" call, use "first()" instead'
         }
-      ]
+      ],
+      output: '$$(".class").first();'
     },
     {
       code: 'element(by.id("id")).$$(".class").get(-1);',
@@ -51,7 +54,8 @@ eslintTester.run('use-first-last', rule, {
         {
           message: 'Unexpected "get(-1)" call, use "last()" instead'
         }
-      ]
+      ],
+      output: 'element(by.id("id")).$$(".class").last();'
     },
     {
       code: 'element.all(by.css(".class")).get(0).getText();',
@@ -59,7 +63,8 @@ eslintTester.run('use-first-last', rule, {
         {
           message: 'Unexpected "get(0)" call, use "first()" instead'
         }
-      ]
+      ],
+      output: 'element.all(by.css(".class")).first().getText();'
     },
     {
       code: 'element.all(by.css(".class")).get(-1).getText();',
@@ -67,7 +72,20 @@ eslintTester.run('use-first-last', rule, {
         {
           message: 'Unexpected "get(-1)" call, use "last()" instead'
         }
-      ]
+      ],
+      output: 'element.all(by.css(".class")).last().getText();'
+    },
+    {
+      code: 'element.all(by.css(".class")).get(-1).all(by.css(".anotherclass")).get(0).getText();',
+      errors: [
+        {
+          message: 'Unexpected "get(0)" call, use "first()" instead'
+        },
+        {
+          message: 'Unexpected "get(-1)" call, use "last()" instead'
+        }
+      ],
+      output: 'element.all(by.css(".class")).last().all(by.css(".anotherclass")).first().getText();'
     }
   ]
 })
