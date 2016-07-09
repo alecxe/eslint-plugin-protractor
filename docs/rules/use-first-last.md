@@ -2,6 +2,8 @@
 
 The `first()` and `last()` shortcuts are, generally speaking, more readable than `get(0)` and `get(-1)`.
 
+**Fixable:** This rule is automatically fixable using the `--fix` flag on the command line.
+
 ## Rule details
 
 Any use of the following patterns are considered warnings:
