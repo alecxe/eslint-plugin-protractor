@@ -12,6 +12,7 @@ var useAngularLocators = require('./lib/rules/use-angular-locators')
 var useSimpleRepeaters = require('./lib/rules/use-simple-repeaters')
 var noShadowing = require('./lib/rules/no-shadowing')
 var useFirstLast = require('./lib/rules/use-first-last')
+var noGetInIt = require('./lib/rules/no-get-in-it')
 
 module.exports = {
   rules: {
@@ -26,7 +27,8 @@ module.exports = {
     'use-angular-locators': useAngularLocators,
     'use-simple-repeaters': useSimpleRepeaters,
     'no-shadowing': noShadowing,
-    'use-first-last': useFirstLast
+    'use-first-last': useFirstLast,
+    'no-get-in-it': noGetInIt
   },
   configs: {
     recommended: {
@@ -42,6 +44,7 @@ module.exports = {
         'protractor/use-simple-repeaters': 1,
         'protractor/no-shadowing': 1,
         'protractor/use-first-last': 1,
+        'protractor/no-get-in-it': 1,
         'protractor/by-css-shortcut': 0
       },
       globals: {

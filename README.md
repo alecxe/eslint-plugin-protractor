@@ -47,6 +47,7 @@ Rule                         | Default       | Options
 [use-simple-repeaters][]     | 1             |
 [no-shadowing][]             | 1             |
 [use-first-last][]           | 1             |
+[no-get-in-it][]             | 1             |
 [by-css-shortcut][]          | 0             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
@@ -75,6 +76,7 @@ See [configuring rules][] for more information.
 [use-simple-repeaters]: docs/rules/use-simple-repeaters.md
 [no-shadowing]: docs/rules/no-shadowing.md
 [use-first-last]: docs/rules/use-first-last.md
+[no-get-in-it]: docs/rules/no-get-in-it.md
 [by-css-shortcut]: docs/rules/by-css-shortcut.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
