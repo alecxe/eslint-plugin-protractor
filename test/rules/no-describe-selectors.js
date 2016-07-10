@@ -1,10 +1,5 @@
 'use strict'
 
-/**
- * @fileoverview Discourage use of selectors within describe blocks.
- * @author David Adams
- */
-
 var rule = require('../../lib/rules/no-describe-selectors')
 var RuleTester = require('eslint').RuleTester
 var eslintTester = new RuleTester()
