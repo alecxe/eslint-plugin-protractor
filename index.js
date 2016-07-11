@@ -13,6 +13,7 @@ var useSimpleRepeaters = require('./lib/rules/use-simple-repeaters')
 var noShadowing = require('./lib/rules/no-shadowing')
 var useFirstLast = require('./lib/rules/use-first-last')
 var noGetInIt = require('./lib/rules/no-get-in-it')
+var arrayCallbackReturn = require('./lib/rules/array-callback-return')
 
 module.exports = {
   rules: {
@@ -28,7 +29,8 @@ module.exports = {
     'use-simple-repeaters': useSimpleRepeaters,
     'no-shadowing': noShadowing,
     'use-first-last': useFirstLast,
-    'no-get-in-it': noGetInIt
+    'no-get-in-it': noGetInIt,
+    'array-callback-return': arrayCallbackReturn
   },
   configs: {
     recommended: {
@@ -45,6 +47,7 @@ module.exports = {
         'protractor/no-shadowing': 1,
         'protractor/use-first-last': 1,
         'protractor/no-get-in-it': 1,
+        'protractor/array-callback-return': 1,
         'protractor/by-css-shortcut': 0
       },
       globals: {
