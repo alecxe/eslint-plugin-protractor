@@ -15,7 +15,11 @@
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "standard": {
-    "globals": ["describe", "it", "before"]
+    "globals": [
+      "describe",
+      "it",
+      "before"
+    ]
   },
   "keywords": [
     "eslint",
@@ -49,7 +53,7 @@
     "istanbul": "^0.4.3",
     "mocha": "^2.5.1",
     "semantic-release": "^4.3.5",
-    "standard": "^7.1.0"
+    "standard": "^7.1.2"
   },
   "config": {
     "commitizen": {
