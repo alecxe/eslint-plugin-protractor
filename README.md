@@ -49,6 +49,7 @@ Rule                         | Default       | Options
 [use-first-last][]           | 1             |
 [no-get-in-it][]             | 1             |
 [array-callback-return][]    | 1             |
+[no-absolute-url][]          | 1             |
 [by-css-shortcut][]          | 0             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
@@ -79,6 +80,7 @@ See [configuring rules][] for more information.
 [use-first-last]: docs/rules/use-first-last.md
 [no-get-in-it]: docs/rules/no-get-in-it.md
 [array-callback-return]: docs/rules/array-callback-return.md
+[no-absolute-url]: docs/rules/no-absolute-url.md
 [by-css-shortcut]: docs/rules/by-css-shortcut.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 

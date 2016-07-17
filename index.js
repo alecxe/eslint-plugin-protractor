@@ -14,6 +14,7 @@ var noShadowing = require('./lib/rules/no-shadowing')
 var useFirstLast = require('./lib/rules/use-first-last')
 var noGetInIt = require('./lib/rules/no-get-in-it')
 var arrayCallbackReturn = require('./lib/rules/array-callback-return')
+var noAbsoluteURL = require('./lib/rules/no-absolute-url')
 
 module.exports = {
   rules: {
@@ -30,7 +31,8 @@ module.exports = {
     'no-shadowing': noShadowing,
     'use-first-last': useFirstLast,
     'no-get-in-it': noGetInIt,
-    'array-callback-return': arrayCallbackReturn
+    'array-callback-return': arrayCallbackReturn,
+    'no-absolute-url': noAbsoluteURL
   },
   configs: {
     recommended: {
@@ -48,6 +50,7 @@ module.exports = {
         'protractor/use-first-last': 1,
         'protractor/no-get-in-it': 1,
         'protractor/array-callback-return': 1,
+        'protractor/no-absolute-url': 1,
         'protractor/by-css-shortcut': 0
       },
       globals: {
