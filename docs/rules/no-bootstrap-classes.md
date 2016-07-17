@@ -7,7 +7,7 @@ Compare these classes with, for example, `product` or `itemPrice` classes - thes
 
 ## Rule details
 
-Current list of Bootstrap classes this rule would complain about can be viewed [here](lib/bootstrap-layout-classes.js) (hand-picked).
+Current list of Bootstrap classes this rule would complain about can be viewed [here](../../lib/bootstrap-layout-classes.js) (hand-picked).
 
 Any use of the following patterns are considered warnings:
 
