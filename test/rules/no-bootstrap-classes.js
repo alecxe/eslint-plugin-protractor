@@ -26,7 +26,9 @@ eslintTester.run('no-bootstrap-classes', rule, {
     '$("p::first-line");',
     '$("invalid::selector()");',
     '$("a[href^=/], .container:has(nav) > a[href]:lt($var)");',
-    '$$("//somethinginvalid[@attr=\'test\']")'
+    '$$("//somethinginvalid[@attr=\'test\']")',
+    'element(by.css("a[href]"));',
+    '$("");'
   ],
 
   invalid: [
