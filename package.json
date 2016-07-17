@@ -48,7 +48,6 @@
     "chai": "^3.5.0",
     "commitizen": "^2.8.1",
     "coveralls": "^2.11.9",
-    "css-selector-parser": "^1.1.0",
     "cz-conventional-changelog": "^1.1.6",
     "eslint": ">=2.0.0",
     "install": "^0.8.1",
@@ -62,5 +61,8 @@
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "dependencies": {
+    "css-selector-parser": "^1.1.0"
   }
 }
