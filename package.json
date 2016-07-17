@@ -48,10 +48,13 @@
     "chai": "^3.5.0",
     "commitizen": "^2.8.1",
     "coveralls": "^2.11.9",
+    "css-selector-parser": "^1.1.0",
     "cz-conventional-changelog": "^1.1.6",
     "eslint": ">=2.0.0",
+    "install": "^0.8.1",
     "istanbul": "^0.4.3",
     "mocha": "^2.5.1",
+    "npm": "^3.10.5",
     "semantic-release": "^4.3.5",
     "standard": "^7.1.2"
   },

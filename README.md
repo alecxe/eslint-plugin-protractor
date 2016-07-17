@@ -43,6 +43,7 @@ Rule                         | Default       | Options
 [no-by-xpath][]              | 1             |
 [no-describe-selectors][]    | 1             |
 [no-angular-classes][]       | 1             |
+[no-bootstrap-classes][]     | 1             |
 [use-angular-locators][]     | 1             |
 [use-simple-repeaters][]     | 1             |
 [no-shadowing][]             | 1             |
@@ -74,6 +75,7 @@ See [configuring rules][] for more information.
 [no-by-xpath]: docs/rules/no-by-xpath.md
 [no-describe-selectors]: docs/rules/no-describe-selectors.md
 [no-angular-classes]: docs/rules/no-angular-classes.md
+[no-bootstrap-classes]: docs/rules/no-bootstrap-classes.md
 [use-angular-locators]: docs/rules/use-angular-locators.md
 [use-simple-repeaters]: docs/rules/use-simple-repeaters.md
 [no-shadowing]: docs/rules/no-shadowing.md

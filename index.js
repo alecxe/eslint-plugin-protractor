@@ -8,6 +8,7 @@ var noByXpath = require('./lib/rules/no-by-xpath')
 var noDescribeSelectors = require('./lib/rules/no-describe-selectors')
 var byCssShortcut = require('./lib/rules/by-css-shortcut')
 var noAngularClasses = require('./lib/rules/no-angular-classes')
+var noBootstrapClasses = require('./lib/rules/no-bootstrap-classes')
 var useAngularLocators = require('./lib/rules/use-angular-locators')
 var useSimpleRepeaters = require('./lib/rules/use-simple-repeaters')
 var noShadowing = require('./lib/rules/no-shadowing')
@@ -26,6 +27,7 @@ module.exports = {
     'no-describe-selectors': noDescribeSelectors,
     'by-css-shortcut': byCssShortcut,
     'no-angular-classes': noAngularClasses,
+    'no-bootstrap-classes': noBootstrapClasses,
     'use-angular-locators': useAngularLocators,
     'use-simple-repeaters': useSimpleRepeaters,
     'no-shadowing': noShadowing,
@@ -44,6 +46,7 @@ module.exports = {
         'protractor/no-by-xpath': 1,
         'protractor/no-describe-selectors': 1,
         'protractor/no-angular-classes': 1,
+        'protractor/no-bootstrap-classes': 1,
         'protractor/use-angular-locators': 1,
         'protractor/use-simple-repeaters': 1,
         'protractor/no-shadowing': 1,
