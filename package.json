@@ -42,7 +42,7 @@
   },
   "homepage": "https://github.com/alecxe/eslint-plugin-protractor",
   "peerDependencies": {
-    "eslint": ">=2.0.0"
+    "eslint": ">=3.1.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
