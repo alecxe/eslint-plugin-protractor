@@ -16,7 +16,7 @@ Edit your ESLint config and add (this is example configuration):
 
 If this setting is not present, the rule would be disabled.
 
-*Note: Because ESLint uses absolute paths and it is difficult to correctly locate base path of your project from within a plugin, so it is highly suggested to use complete paths to folders you want to disable to leverage the risk of targeting wrong directories and files.*
+*Note: Because ESLint uses absolute paths and it is difficult to correctly locate base path of your project from within a plugin, so it is highly suggested to use complete paths to files you want to match to leverage the risk of targeting wrong directories and files.*
 
 ## Rule details
 
