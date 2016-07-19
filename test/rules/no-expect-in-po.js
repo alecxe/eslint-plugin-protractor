@@ -16,20 +16,20 @@ eslintTester.run('no-expect-in-po', rule, {
 
     {
       code: 'expect(2).toEqual(2);',
-      'eslint-plugin-protractor': {
-        settings: {
+      settings: {
+        'eslint-plugin-protractor': {
           paths: {
-            po: ['*.po.js']
+            po: ['*.txt']
           }
         }
       },
-      filename: 'test.spec.js'
+      filename: '/usr/app/test/e2e/specs/test.spec.js'
     },
 
     {
       code: 'expect(3).toEqual(3);',
-      'eslint-plugin-protractor': {
-        settings: {
+      settings: {
+        'eslint-plugin-protractor': {
           paths: {
             po: ['*.somethingelse.js']
           }
@@ -40,8 +40,8 @@ eslintTester.run('no-expect-in-po', rule, {
 
     {
       code: 'expect(4).toEqual(4);',
-      'eslint-plugin-protractor': {
-        settings: {
+      settings: {
+        'eslint-plugin-protractor': {
           paths: {
             po: []
           }
@@ -52,8 +52,8 @@ eslintTester.run('no-expect-in-po', rule, {
 
     {
       code: 'expect(5).toEqual(5);',
-      'eslint-plugin-protractor': {
-        settings: {
+      settings: {
+        'eslint-plugin-protractor': {
           paths: {
             po: ['*.somethingelse1.js', '*.somethingelse2.js']
           }
