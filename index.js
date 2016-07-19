@@ -16,6 +16,7 @@ var useFirstLast = require('./lib/rules/use-first-last')
 var noGetInIt = require('./lib/rules/no-get-in-it')
 var arrayCallbackReturn = require('./lib/rules/array-callback-return')
 var noAbsoluteURL = require('./lib/rules/no-absolute-url')
+var noExpectInPO = require('./lib/rules/no-expect-in-po')
 
 module.exports = {
   rules: {
@@ -34,7 +35,8 @@ module.exports = {
     'use-first-last': useFirstLast,
     'no-get-in-it': noGetInIt,
     'array-callback-return': arrayCallbackReturn,
-    'no-absolute-url': noAbsoluteURL
+    'no-absolute-url': noAbsoluteURL,
+    'no-expect-in-po': noExpectInPO
   },
   configs: {
     recommended: {
@@ -54,6 +56,7 @@ module.exports = {
         'protractor/no-get-in-it': 1,
         'protractor/array-callback-return': 1,
         'protractor/no-absolute-url': 1,
+        'protractor/no-expect-in-po': 1,
         'protractor/by-css-shortcut': 0
       },
       globals: {
