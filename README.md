@@ -52,6 +52,7 @@ Rule                         | Default       | Options
 [array-callback-return][]    | 1             |
 [no-absolute-url][]          | 1             |
 [no-expect-in-po][]          | 1             | requires plugin "settings"
+[no-promise-in-if][]         | 1             | 
 [by-css-shortcut][]          | 0             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
@@ -86,6 +87,7 @@ See [configuring rules][] for more information.
 [no-absolute-url]: docs/rules/no-absolute-url.md
 [by-css-shortcut]: docs/rules/by-css-shortcut.md
 [no-expect-in-po]: docs/rules/no-expect-in-po.md
+[no-promise-in-if]: docs/rules/no-promise-in-if.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration

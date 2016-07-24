@@ -17,6 +17,7 @@ var noGetInIt = require('./lib/rules/no-get-in-it')
 var arrayCallbackReturn = require('./lib/rules/array-callback-return')
 var noAbsoluteURL = require('./lib/rules/no-absolute-url')
 var noExpectInPO = require('./lib/rules/no-expect-in-po')
+var noPromiseInIf = require('./lib/rules/no-promise-in-if')
 
 module.exports = {
   rules: {
@@ -36,7 +37,8 @@ module.exports = {
     'no-get-in-it': noGetInIt,
     'array-callback-return': arrayCallbackReturn,
     'no-absolute-url': noAbsoluteURL,
-    'no-expect-in-po': noExpectInPO
+    'no-expect-in-po': noExpectInPO,
+    'no-promise-in-if': noPromiseInIf
   },
   configs: {
     recommended: {
@@ -57,6 +59,7 @@ module.exports = {
         'protractor/array-callback-return': 1,
         'protractor/no-absolute-url': 1,
         'protractor/no-expect-in-po': 1,
+        'protractor/no-promise-in-if': 1,
         'protractor/by-css-shortcut': 0
       },
       globals: {
