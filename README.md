@@ -53,10 +53,14 @@ Rule                         | Default       | Options
 [no-absolute-url][]          | 1             |
 [no-expect-in-po][]          | 1             | requires plugin "settings"
 [no-promise-in-if][]         | 1             | 
+[no-execute-script][]        | 1             | requires plugin "settings"
 [by-css-shortcut][]          | 0             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
 ESLint to throw an error (with an exit code of `1`) when triggered.
+
+The `requires plugin "settings"` note indicates that a rule needs the plugin to have configured settings in your eslint config.
+For example, `no-execute-script` rule expects configured paths to either spec, or page object files, or both. 
 
 You may customise each rule by adding a value in your `.eslintrc` `rules`
 property:
@@ -88,6 +92,7 @@ See [configuring rules][] for more information.
 [by-css-shortcut]: docs/rules/by-css-shortcut.md
 [no-expect-in-po]: docs/rules/no-expect-in-po.md
 [no-promise-in-if]: docs/rules/no-promise-in-if.md
+[no-execute-script]: docs/rules/no-execute-script.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration
