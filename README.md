@@ -34,29 +34,29 @@
 
 This plugin ships with a default configuration for each rule:
 
-Rule                         | Default       | Options
-----                         | -------       | ---------
-[missing-perform][]          | 2             |
-[no-browser-pause][]         | 2             |
-[correct-chaining][]         | 2             |
-[missing-wait-message][]     | 1             |
-[no-browser-sleep][]         | 1             |
-[no-by-xpath][]              | 1             |
-[no-describe-selectors][]    | 1             |
-[no-angular-classes][]       | 1             |
-[no-bootstrap-classes][]     | 1             |
-[use-angular-locators][]     | 1             |
-[use-simple-repeaters][]     | 1             |
-[no-shadowing][]             | 1             |
-[use-first-last][]           | 1             |
-[no-get-in-it][]             | 1             |
-[array-callback-return][]    | 1             |
-[no-absolute-url][]          | 1             |
-[no-expect-in-po][]          | 1             | requires plugin "settings"
-[no-promise-in-if][]         | 1             | 
-[no-execute-script][]        | 1             | requires plugin "settings"
-[no-repetitive-locators][]   | 1             |
-[by-css-shortcut][]          | 0             |
+Rule                         | Default Error Level | Auto-fixable | Options
+----                         | -------             | -----        | -----
+[missing-perform][]          | 2                   |              |
+[no-browser-pause][]         | 2                   |              |
+[correct-chaining][]         | 2                   | Yes          |
+[missing-wait-message][]     | 1                   |              |
+[no-browser-sleep][]         | 1                   |              |
+[no-by-xpath][]              | 1                   |              |
+[no-describe-selectors][]    | 1                   |              |
+[no-angular-classes][]       | 1                   |              |
+[no-bootstrap-classes][]     | 1                   |              |
+[use-angular-locators][]     | 1                   |              |
+[use-simple-repeaters][]     | 1                   |              |
+[no-shadowing][]             | 1                   |              |
+[use-first-last][]           | 1                   | Yes          |
+[no-get-in-it][]             | 1                   |              |
+[array-callback-return][]    | 1                   |              |
+[no-absolute-url][]          | 1                   |              |
+[no-expect-in-po][]          | 1                   |              | requires plugin "settings"
+[no-promise-in-if][]         | 1                   |              | 
+[no-execute-script][]        | 1                   |              | requires plugin "settings"
+[no-repetitive-locators][]   | 1                   |              |
+[by-css-shortcut][]          | 0                   |              |
 
 For example, the `missing-perform` rule is enabled by default and will cause
 ESLint to throw an error (with an exit code of `1`) when triggered.

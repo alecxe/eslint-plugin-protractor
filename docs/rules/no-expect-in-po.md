@@ -6,13 +6,15 @@ This rule enforces the [Avoid using `expect()` in page objects](https://github.c
 
 Edit your ESLint config and add (this is example configuration):
 
-    settings: {
-      "eslint-plugin-protractor":
-        paths: {
-          po: ["**/test/e2e/po/*.po.js"]
-        }
-      }
+```js
+settings: {
+  "eslint-plugin-protractor":
+    paths: {
+      po: ["**/test/e2e/po/*.po.js"]
     }
+  }
+}
+```
 
 If this setting is not present, the rule would be disabled.
 

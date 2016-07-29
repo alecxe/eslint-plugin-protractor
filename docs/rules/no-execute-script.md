@@ -7,14 +7,16 @@ Executing scripts should rather be a part of "helpers" or "libs".
 
 Edit your ESLint config and add (this is example configuration):
 
-    settings: {
-      "eslint-plugin-protractor":
-        paths: {
-          po: ["**/test/e2e/po/*.po.js"],
-          specs: ["**/test/e2e/specs/*.spec.js"]
-        }
-      }
+```js
+settings: {
+  "eslint-plugin-protractor":
+    paths: {
+      po: ["**/test/e2e/po/*.po.js"],
+      specs: ["**/test/e2e/specs/*.spec.js"]
     }
+  }
+}
+```
 
 If neither `po`, nor `specs` is specified, the rule would be disabled.
 
