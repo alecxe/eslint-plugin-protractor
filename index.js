@@ -20,6 +20,7 @@ var noExpectInPO = require('./lib/rules/no-expect-in-po')
 var noPromiseInIf = require('./lib/rules/no-promise-in-if')
 var noExecuteScript = require('./lib/rules/no-execute-script')
 var correctChaining = require('./lib/rules/correct-chaining')
+var noRepetitiveLocators = require('./lib/rules/no-repetitive-locators')
 
 module.exports = {
   rules: {
@@ -42,6 +43,7 @@ module.exports = {
     'no-expect-in-po': noExpectInPO,
     'no-promise-in-if': noPromiseInIf,
     'no-execute-script': noExecuteScript,
+    'no-repetitive-locators': noRepetitiveLocators,
     'correct-chaining': correctChaining
   },
   configs: {
@@ -66,6 +68,7 @@ module.exports = {
         'protractor/no-expect-in-po': 1,
         'protractor/no-promise-in-if': 1,
         'protractor/no-execute-script': 1,
+        'protractor/no-repetitive-locators': 1,
         'protractor/by-css-shortcut': 0
       },
       globals: {

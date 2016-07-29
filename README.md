@@ -55,6 +55,7 @@ Rule                         | Default       | Options
 [no-expect-in-po][]          | 1             | requires plugin "settings"
 [no-promise-in-if][]         | 1             | 
 [no-execute-script][]        | 1             | requires plugin "settings"
+[no-repetitive-locators][]   | 1             |
 [by-css-shortcut][]          | 0             |
 
 For example, the `missing-perform` rule is enabled by default and will cause
@@ -95,6 +96,7 @@ See [configuring rules][] for more information.
 [no-promise-in-if]: docs/rules/no-promise-in-if.md
 [no-execute-script]: docs/rules/no-execute-script.md
 [correct-chaining]: docs/rules/correct-chaining.md
+[no-repetitive-locators]: docs/rules/no-repetitive-locators.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration
