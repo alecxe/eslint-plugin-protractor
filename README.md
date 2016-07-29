@@ -38,6 +38,7 @@ Rule                         | Default       | Options
 ----                         | -------       | ---------
 [missing-perform][]          | 2             |
 [no-browser-pause][]         | 2             |
+[correct-chaining][]         | 2             |
 [missing-wait-message][]     | 1             |
 [no-browser-sleep][]         | 1             |
 [no-by-xpath][]              | 1             |
@@ -93,6 +94,7 @@ See [configuring rules][] for more information.
 [no-expect-in-po]: docs/rules/no-expect-in-po.md
 [no-promise-in-if]: docs/rules/no-promise-in-if.md
 [no-execute-script]: docs/rules/no-execute-script.md
+[correct-chaining]: docs/rules/correct-chaining.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration

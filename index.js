@@ -19,6 +19,7 @@ var noAbsoluteURL = require('./lib/rules/no-absolute-url')
 var noExpectInPO = require('./lib/rules/no-expect-in-po')
 var noPromiseInIf = require('./lib/rules/no-promise-in-if')
 var noExecuteScript = require('./lib/rules/no-execute-script')
+var correctChaining = require('./lib/rules/correct-chaining')
 
 module.exports = {
   rules: {
@@ -40,13 +41,15 @@ module.exports = {
     'no-absolute-url': noAbsoluteURL,
     'no-expect-in-po': noExpectInPO,
     'no-promise-in-if': noPromiseInIf,
-    'no-execute-script': noExecuteScript
+    'no-execute-script': noExecuteScript,
+    'correct-chaining': correctChaining
   },
   configs: {
     recommended: {
       rules: {
         'protractor/missing-perform': 2,
         'protractor/no-browser-pause': 2,
+        'protractor/correct-chaining': 2,
         'protractor/missing-wait-message': 1,
         'protractor/no-browser-sleep': 1,
         'protractor/no-by-xpath': 1,
