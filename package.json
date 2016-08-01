@@ -52,7 +52,7 @@
     "eslint": ">=2.0.0",
     "install": "^0.8.1",
     "istanbul": "^0.4.3",
-    "mocha": "^2.5.1",
+    "mocha": "^3.0.0",
     "npm": "^3.10.5",
     "semantic-release": "^4.3.5",
     "standard": "^7.1.2"
