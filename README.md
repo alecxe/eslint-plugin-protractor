@@ -56,6 +56,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-promise-in-if][]         | 1                   |              | 
 [no-execute-script][]        | 1                   |              | requires plugin "settings"
 [no-repetitive-locators][]   | 1                   |              |
+[no-get-inner-outer-html][]  | 1                   |              |
 [by-css-shortcut][]          | 0                   |              |
 
 For example, the `missing-perform` rule is enabled by default and will cause
@@ -97,6 +98,7 @@ See [configuring rules][] for more information.
 [no-execute-script]: docs/rules/no-execute-script.md
 [correct-chaining]: docs/rules/correct-chaining.md
 [no-repetitive-locators]: docs/rules/no-repetitive-locators.md
+[no-get-inner-outer-html]: docs/rules/no-get-inner-outer-html.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration
