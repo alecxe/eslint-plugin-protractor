@@ -21,6 +21,7 @@ var noPromiseInIf = require('./lib/rules/no-promise-in-if')
 var noExecuteScript = require('./lib/rules/no-execute-script')
 var correctChaining = require('./lib/rules/correct-chaining')
 var noRepetitiveLocators = require('./lib/rules/no-repetitive-locators')
+var noRepetitiveSelectors = require('./lib/rules/no-repetitive-selectors')
 var noGetInnerOuterHtml = require('./lib/rules/no-get-inner-outer-html')
 
 module.exports = {
@@ -45,6 +46,7 @@ module.exports = {
     'no-promise-in-if': noPromiseInIf,
     'no-execute-script': noExecuteScript,
     'no-repetitive-locators': noRepetitiveLocators,
+    'no-repetitive-selectors': noRepetitiveSelectors,
     'correct-chaining': correctChaining,
     'no-get-inner-outer-html': noGetInnerOuterHtml
   },
@@ -71,6 +73,7 @@ module.exports = {
         'protractor/no-promise-in-if': 1,
         'protractor/no-execute-script': 1,
         'protractor/no-repetitive-locators': 1,
+        'protractor/no-repetitive-selectors': 1,
         'protractor/no-get-inner-outer-html': 1,
         'protractor/by-css-shortcut': 0
       },
