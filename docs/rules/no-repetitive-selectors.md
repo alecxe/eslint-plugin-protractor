@@ -21,3 +21,8 @@ var MyPage = function () {
    this.child2 = this.parent.$("#subcontainer > .add-client");
 }
 ```
+
+# When not to have this rule enabled
+
+At the moment, I am not completely sure how well this rule would work for real-world Protractor codebases. 
+If you see it reporting false positives, please report through the issue tracker and consider disabling the rule.
