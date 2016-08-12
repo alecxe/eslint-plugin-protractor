@@ -8,7 +8,11 @@ var eslintTester = new RuleTester()
 eslintTester.run('use-simple-repeaters', rule, {
   valid: [
     'element.all(by.repeater("item in items"));',
-    'element.all(by.exactRepeater("item in items"));'
+    'element.all(by.exactRepeater("item in items"));',
+    'element.all(by.repeater(arg));',
+    'element.all(by.exactRepeater(arg));',
+    'element.all(by.repeater());',
+    'element.all(by.repeater(undefined));'
   ],
 
   invalid: [
