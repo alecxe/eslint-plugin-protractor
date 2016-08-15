@@ -25,6 +25,7 @@ var noRepetitiveSelectors = require('./lib/rules/no-repetitive-selectors')
 var noGetInnerOuterHtml = require('./lib/rules/no-get-inner-outer-html')
 var noAngularAttributes = require('./lib/rules/no-angular-attributes')
 var noInvalidSelectors = require('./lib/rules/no-invalid-selectors')
+var usePromiseAll = require('./lib/rules/use-promise-all')
 
 module.exports = {
   rules: {
@@ -52,7 +53,8 @@ module.exports = {
     'correct-chaining': correctChaining,
     'no-get-inner-outer-html': noGetInnerOuterHtml,
     'no-angular-attributes': noAngularAttributes,
-    'no-invalid-selectors': noInvalidSelectors
+    'no-invalid-selectors': noInvalidSelectors,
+    'use-promise-all': usePromiseAll
   },
   configs: {
     recommended: {
@@ -81,6 +83,7 @@ module.exports = {
         'protractor/no-repetitive-selectors': 1,
         'protractor/no-get-inner-outer-html': 1,
         'protractor/no-angular-attributes': 1,
+        'protractor/use-promise-all': 0,
         'protractor/by-css-shortcut': 0
       },
       globals: {
