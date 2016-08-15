@@ -60,7 +60,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-repetitive-locators][]   | 1                   |              |
 [no-repetitive-selectors][]  | 1                   |              |
 [no-get-inner-outer-html][]  | 1                   |              |
-[use-promise-all][]          | 1                   |              |
+[use-promise-all][]          | 0                   |              |
 [by-css-shortcut][]          | 0                   |              |
 
 For example, the `missing-perform` rule is enabled by default and will cause
