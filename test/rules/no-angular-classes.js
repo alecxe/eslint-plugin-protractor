@@ -96,6 +96,14 @@ eslintTester.run('no-angular-classes', rule, {
           message: 'Unexpected Angular class "ng-untouched" inside a CSS selector'
         }
       ]
+    },
+    {
+      code: '$("a[href^=/], .container:has(nav) > a.ng-untouched");',
+      errors: [
+        {
+          message: 'Unexpected Angular class "ng-untouched" inside a CSS selector'
+        }
+      ]
     }
   ]
 })
