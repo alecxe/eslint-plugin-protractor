@@ -39,6 +39,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [missing-perform][]          | 2                   |              |
 [no-browser-pause][]         | 2                   |              |
 [correct-chaining][]         | 2                   | Yes          |
+[no-invalid-selectors][]     | 2                   |              |
 [missing-wait-message][]     | 1                   |              |
 [no-browser-sleep][]         | 1                   |              |
 [no-by-xpath][]              | 1                   |              |
@@ -59,7 +60,6 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-repetitive-locators][]   | 1                   |              |
 [no-repetitive-selectors][]  | 1                   |              |
 [no-get-inner-outer-html][]  | 1                   |              |
-[no-invalid-selectors][]     | 1                   |              |
 [by-css-shortcut][]          | 0                   |              |
 
 For example, the `missing-perform` rule is enabled by default and will cause
