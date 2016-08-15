@@ -59,6 +59,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-repetitive-locators][]   | 1                   |              |
 [no-repetitive-selectors][]  | 1                   |              |
 [no-get-inner-outer-html][]  | 1                   |              |
+[no-invalid-selectors][]     | 1                   |              |
 [by-css-shortcut][]          | 0                   |              |
 
 For example, the `missing-perform` rule is enabled by default and will cause
@@ -103,6 +104,7 @@ See [configuring rules][] for more information.
 [no-get-inner-outer-html]: docs/rules/no-get-inner-outer-html.md
 [no-repetitive-selectors]: docs/rules/no-repetitive-selectors.md
 [no-angular-attributes]: docs/rules/no-angular-attributes.md
+[no-invalid-selectors]: docs/rules/no-invalid-selectors.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration

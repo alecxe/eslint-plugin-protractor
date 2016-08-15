@@ -24,6 +24,7 @@ var noRepetitiveLocators = require('./lib/rules/no-repetitive-locators')
 var noRepetitiveSelectors = require('./lib/rules/no-repetitive-selectors')
 var noGetInnerOuterHtml = require('./lib/rules/no-get-inner-outer-html')
 var noAngularAttributes = require('./lib/rules/no-angular-attributes')
+var noInvalidSelectors = require('./lib/rules/no-invalid-selectors')
 
 module.exports = {
   rules: {
@@ -50,7 +51,8 @@ module.exports = {
     'no-repetitive-selectors': noRepetitiveSelectors,
     'correct-chaining': correctChaining,
     'no-get-inner-outer-html': noGetInnerOuterHtml,
-    'no-angular-attributes': noAngularAttributes
+    'no-angular-attributes': noAngularAttributes,
+    'no-invalid-selectors': noInvalidSelectors
   },
   configs: {
     recommended: {
@@ -58,6 +60,7 @@ module.exports = {
         'protractor/missing-perform': 2,
         'protractor/no-browser-pause': 2,
         'protractor/correct-chaining': 2,
+        'protractor/no-invalid-selectors': 2,
         'protractor/missing-wait-message': 1,
         'protractor/no-browser-sleep': 1,
         'protractor/no-by-xpath': 1,
