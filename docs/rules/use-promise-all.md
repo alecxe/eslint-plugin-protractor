@@ -29,7 +29,8 @@ protractor.promise.all([
 
 ## Rule details
 
-The rule would look for the `.then()` method calls and warn if there is at least one more `.then()` among node's parents.
+The rule would look for the `.then()` method calls and warn if there is at least one more `.then()` among node's parents. 
+Note that it would only look for `then` callback functions with at least one argument.
 
 This rule is disabled by default mostly because I fear it is going to produce false positives too often. 
 Please enable if applicable in your case.
