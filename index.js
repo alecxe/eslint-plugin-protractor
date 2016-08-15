@@ -23,6 +23,7 @@ var correctChaining = require('./lib/rules/correct-chaining')
 var noRepetitiveLocators = require('./lib/rules/no-repetitive-locators')
 var noRepetitiveSelectors = require('./lib/rules/no-repetitive-selectors')
 var noGetInnerOuterHtml = require('./lib/rules/no-get-inner-outer-html')
+var noAngularAttributes = require('./lib/rules/no-angular-attributes')
 
 module.exports = {
   rules: {
@@ -48,7 +49,8 @@ module.exports = {
     'no-repetitive-locators': noRepetitiveLocators,
     'no-repetitive-selectors': noRepetitiveSelectors,
     'correct-chaining': correctChaining,
-    'no-get-inner-outer-html': noGetInnerOuterHtml
+    'no-get-inner-outer-html': noGetInnerOuterHtml,
+    'no-angular-attributes': noAngularAttributes
   },
   configs: {
     recommended: {
@@ -75,6 +77,7 @@ module.exports = {
         'protractor/no-repetitive-locators': 1,
         'protractor/no-repetitive-selectors': 1,
         'protractor/no-get-inner-outer-html': 1,
+        'protractor/no-angular-attributes': 1,
         'protractor/by-css-shortcut': 0
       },
       globals: {

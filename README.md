@@ -44,8 +44,9 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-by-xpath][]              | 1                   |              |
 [no-describe-selectors][]    | 1                   |              |
 [no-angular-classes][]       | 1                   |              |
-[no-bootstrap-classes][]     | 1                   |              |
 [use-angular-locators][]     | 1                   |              |
+[no-angular-attributes][]    | 1                   |              |
+[no-bootstrap-classes][]     | 1                   |              |
 [use-simple-repeaters][]     | 1                   |              |
 [no-shadowing][]             | 1                   |              |
 [use-first-last][]           | 1                   | Yes          |
@@ -101,6 +102,7 @@ See [configuring rules][] for more information.
 [no-repetitive-locators]: docs/rules/no-repetitive-locators.md
 [no-get-inner-outer-html]: docs/rules/no-get-inner-outer-html.md
 [no-repetitive-selectors]: docs/rules/no-repetitive-selectors.md
+[no-angular-attributes]: docs/rules/no-angular-attributes.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration
