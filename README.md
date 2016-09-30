@@ -36,11 +36,11 @@ This plugin ships with a default configuration for each rule:
 
 Rule                         | Default Error Level | Auto-fixable | Options
 ----                         | -------             | -----        | -----
-[missing-perform][]          | 2                   |              |
+[missing-perform][]          | 2 (Error)           |              |
 [no-browser-pause][]         | 2                   |              |
 [correct-chaining][]         | 2                   | Yes          |
 [no-invalid-selectors][]     | 2                   |              |
-[missing-wait-message][]     | 1                   |              |
+[missing-wait-message][]     | 1 (Warning)         |              |
 [no-browser-sleep][]         | 1                   |              |
 [no-by-xpath][]              | 1                   |              |
 [no-describe-selectors][]    | 1                   |              |
@@ -60,17 +60,16 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-repetitive-locators][]   | 1                   |              |
 [no-repetitive-selectors][]  | 1                   |              |
 [no-get-inner-outer-html][]  | 1                   |              |
-[use-promise-all][]          | 0                   |              |
+[use-promise-all][]          | 0 (Turned off)      |              |
 [by-css-shortcut][]          | 0                   |              |
 
 For example, the `missing-perform` rule is enabled by default and will cause
 ESLint to throw an error (with an exit code of `1`) when triggered.
 
-The `requires plugin "settings"` note indicates that a rule needs the plugin to have configured settings in your eslint config.
+The `requires plugin "settings"` note indicates that a rule needs the plugin to have configured settings in your ESLint config.
 For example, `no-execute-script` rule expects configured paths to either spec, or page object files, or both. 
 
-You may customise each rule by adding a value in your `.eslintrc` `rules`
-property:
+You may customise each rule by adding a value in your `.eslintrc` `rules` property:
 
 ```yaml
 plugins:
