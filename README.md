@@ -15,6 +15,11 @@
 
 > ESLint rules for Protractor
 
+This plugin would not only help catch common Protractor-specific errors early, follow the best practices for writing Protractor tests,
+but would also help maintaining good and reliable element locators.
+
+The plugin would be of the most help if configured to run in your IDE of choice on the fly.
+
 ## Usage
 
 1. Install `eslint-plugin-protractor` as a dev-dependency:
