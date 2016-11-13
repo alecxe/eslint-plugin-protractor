@@ -46,6 +46,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [correct-chaining][]         | 2                   | Yes          |
 [no-invalid-selectors][]     | 2                   |              |
 [no-array-finder-methods][]  | 2                   |              |
+[valid-locator-type][]       | 2                   |              |
 [missing-wait-message][]     | 1 (Warning)         |              |
 [no-browser-sleep][]         | 1                   |              |
 [no-by-xpath][]              | 1                   |              |
@@ -113,6 +114,7 @@ See [configuring rules][] for more information.
 [no-invalid-selectors]: docs/rules/no-invalid-selectors.md
 [use-promise-all]: docs/rules/use-promise-all.md
 [no-array-finder-methods]: docs/rules/no-array-finder-methods.md
+[valid-locator-type]: docs/rules/valid-locator-type.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration
