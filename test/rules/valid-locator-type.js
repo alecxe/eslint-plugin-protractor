@@ -19,7 +19,15 @@ eslintTester.run('valid-locator-type', rule, {
     '$$(".class1").all(by.css(".class2"));',
     '$(".class1").$(".class2");',
     '$(".class1").$$(".class2");',
-    '$$(".class1").$$(".class2");'
+    '$$(".class1").$$(".class2");',
+    'element();',
+    'element(somevariable);',
+    'element.all();',
+    'element.all(somevariable);',
+    '$$(".class1").$$();',
+    '$$(".class1").$$(somevariable);',
+    '$();',
+    '$(somevariable);'
   ],
 
   invalid: [
