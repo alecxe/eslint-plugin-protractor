@@ -28,6 +28,7 @@ var noInvalidSelectors = require('./lib/rules/no-invalid-selectors')
 var usePromiseAll = require('./lib/rules/use-promise-all')
 var noArrayFinderMethods = require('./lib/rules/no-array-finder-methods')
 var validLocatorType = require('./lib/rules/valid-locator-type')
+var noCompoundClasses = require('./lib/rules/no-compound-classes')
 
 module.exports = {
   rules: {
@@ -58,7 +59,8 @@ module.exports = {
     'no-invalid-selectors': noInvalidSelectors,
     'use-promise-all': usePromiseAll,
     'no-array-finder-methods': noArrayFinderMethods,
-    'valid-locator-type': validLocatorType
+    'valid-locator-type': validLocatorType,
+    'no-compound-classes': noCompoundClasses
   },
   configs: {
     recommended: {
@@ -69,6 +71,7 @@ module.exports = {
         'protractor/no-invalid-selectors': 2,
         'protractor/no-array-finder-methods': 2,
         'protractor/valid-locator-type': 2,
+        'protractor/no-compound-classes': 2,
         'protractor/missing-wait-message': 1,
         'protractor/no-browser-sleep': 1,
         'protractor/no-by-xpath': 1,
