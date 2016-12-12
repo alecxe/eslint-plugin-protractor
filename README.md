@@ -68,6 +68,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-repetitive-locators][]   | 1                   |              |
 [no-repetitive-selectors][]  | 1                   |              |
 [no-get-inner-outer-html][]  | 1                   |              |
+[use-count-method][]         | 1                   |              |
 [use-promise-all][]          | 0 (Turned off)      |              |
 [by-css-shortcut][]          | 0                   |              |
 
@@ -117,6 +118,7 @@ See [configuring rules][] for more information.
 [no-array-finder-methods]: docs/rules/no-array-finder-methods.md
 [valid-locator-type]: docs/rules/valid-locator-type.md
 [no-compound-classes]: docs/rules/no-compound-classes.md
+[use-count-method]: docs/rules/use-count-method.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration

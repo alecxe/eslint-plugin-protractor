@@ -29,6 +29,7 @@ var usePromiseAll = require('./lib/rules/use-promise-all')
 var noArrayFinderMethods = require('./lib/rules/no-array-finder-methods')
 var validLocatorType = require('./lib/rules/valid-locator-type')
 var noCompoundClasses = require('./lib/rules/no-compound-classes')
+var useCountMethod = require('./lib/rules/use-count-method')
 
 module.exports = {
   rules: {
@@ -60,7 +61,8 @@ module.exports = {
     'use-promise-all': usePromiseAll,
     'no-array-finder-methods': noArrayFinderMethods,
     'valid-locator-type': validLocatorType,
-    'no-compound-classes': noCompoundClasses
+    'no-compound-classes': noCompoundClasses,
+    'use-count-method': useCountMethod
   },
   configs: {
     recommended: {
@@ -92,6 +94,7 @@ module.exports = {
         'protractor/no-repetitive-selectors': 1,
         'protractor/no-get-inner-outer-html': 1,
         'protractor/no-angular-attributes': 1,
+        'protractor/use-count-method': 1,
         'protractor/use-promise-all': 0,
         'protractor/by-css-shortcut': 0
       },
