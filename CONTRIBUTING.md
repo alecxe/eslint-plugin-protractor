@@ -6,7 +6,7 @@
 * Format Git commit messages according to [AngularJS conventions][cc]
 * The repository is [commitizen-friendly][], please use `git cz` to make it easy format the commit messages properly
 * When creating a new rule, please add it to [index.js][], document it (see
-  [docs][]) and update the [configuration table][]
+  [docs][]) and update the [Rules][] section in the `README`
 
 If in doubt, file an issue first.
 
@@ -16,4 +16,4 @@ Thanks!
 [commitizen-friendly]: https://github.com/commitizen/cz-cli
 [docs]: docs/rules
 [index.js]: index.js
-[configuration table]: README.md#configuration
+[rules]: README.md#rules

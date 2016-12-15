@@ -1,4 +1,4 @@
-# Do not allow compound class names in the by.className locator
+# Do not allow compound class names in the `by.className()` locator
 
 Ensure that there are no compound class names (multiple space-delimited classes) used as a value for the `by.className` locator.
 

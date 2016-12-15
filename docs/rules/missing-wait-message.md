@@ -1,4 +1,4 @@
-# Missing wait timeout message in `browser.wait()` (missing-wait-message)
+# Missing wait timeout message in `browser.wait()`
 
 Ensure the timeout message is set when `browser.wait()` is called.
 

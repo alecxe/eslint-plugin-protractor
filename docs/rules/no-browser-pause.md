@@ -1,4 +1,4 @@
-# Discourage the use of `browser.pause()` (no-browser-pause)
+# Discourage the use of `browser.pause()`
 
 Ensure `browser.pause()` is not used.
 

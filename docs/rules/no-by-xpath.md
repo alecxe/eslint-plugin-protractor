@@ -1,4 +1,4 @@
-# Discourage the use of `by.xpath` locator (no-by-xpath)
+# Discourage the use of `by.xpath()` locator
 
 Ensure `by.xpath` locator is not used.
 

@@ -1,4 +1,4 @@
-# Discourage using extended ng-repeat syntax in by.repeater() locators
+# Discourage using extended `ng-repeat` syntax in `by.repeater()` locators
 
 Warn about using [filters, ordering or tracking](https://docs.angularjs.org/api/ng/directive/ngRepeat) inside `by.repeater()` locators.
 Typically filters, ordering or tracking don't contribute to the usefulness and reliability of a locator.

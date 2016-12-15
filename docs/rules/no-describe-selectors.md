@@ -1,4 +1,4 @@
-# Discourage nested selectors within describe blocks (no-describe-selectors)
+# Discourage nested selectors within describe blocks
 
 Ensure raw selectors are not used within `describe` blocks.
 

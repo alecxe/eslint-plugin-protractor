@@ -35,9 +35,50 @@ The plugin would be of the most help if configured to run in your IDE of choice 
       - protractor
     ```
 
-## Configuration
+## Rules
 
-This plugin ships with a default configuration for each rule:
+There are various types of rules implemented in the plugin. Here is a rough categorization.
+
+#### Correct Protractor API usage and Common Errors
+
+* [missing-perform][]: Enforce valid `browser.actions()` usage
+* [correct-chaining][]: Prohibit incorrect chaining of `element` and `element.all`
+* [no-array-finder-methods][]: Disallow using `ElementArrayFinder` methods on `ElementFinder`
+* [array-callback-return][]: Enforce `return` statements in callbacks of `ElementArrayFinder` methods
+* [no-get-inner-outer-html][]: Warn about using deprecated `getInnerHtml()` and `getOuterHtml()` methods
+* [no-promise-in-if][]: Warn if promise is checked for truthiness inside an `if` condition
+
+#### Locating Elements
+
+* [no-invalid-selectors][]: Prohibit creating invalid CSS selectors
+* [valid-locator-type][]: Ensure correct locator argument type for `element()`, `element.all()`, `$()` and `$$()`
+* [no-compound-classes][]: Do not allow compound class names in the `by.className()` locator
+* [no-angular-classes][]: Discourage using Angular CSS classes inside CSS selectors
+* [use-angular-locators][]: Recommend using built-in Angular-specific locators
+* [no-angular-attributes][]: Discourage using Angular attributes inside CSS selectors
+* [no-bootstrap-classes][]: Discourage using Bootstrap layout-oriented CSS classes inside CSS selectors
+* [use-simple-repeaters][]: Discourage using extended `ng-repeat` syntax in `by.repeater()` locators
+* [no-repetitive-locators][]: Discourage repeating locators
+* [no-repetitive-selectors][]: Discourage repeating parts of CSS selectors
+
+#### Style Guide Recommendations and Best Practices
+
+* [missing-wait-message][]: Missing wait timeout message in `browser.wait()`
+* [no-by-xpath][]: Discourage the use of `by.xpath()` locator
+* [no-get-in-it][]: Recommend against having `browser.get()` or `browser.driver.get()` inside `it()`
+* [no-execute-script][]: Recommend against executing scripts in specs and page objects
+* [no-expect-in-po][]: Recommend against making assertions inside Page Objects
+* [no-absolute-url][]: Recommend against navigating to absolute URLs inside `browser.get()` or `browser.driver.get()`
+* [use-first-last][]: Recommend using `first()` instead of `get(0)` and `last()` instead of `get(-1)`
+* [no-shadowing][]: Don't allow to shadow the built-in Protractor globals
+* [use-count-method][]: Recommend using `count()` instead of `then()` and `length`
+* [use-promise-all][]: Recommend using `protractor.promise.all()` to resolve multiple promises 
+* [by-css-shortcut][]: Recommend using `$` and `$$` shortcuts
+* [no-describe-selectors][]: Discourage nested selectors within describe blocks
+* [no-browser-pause][]: Discourage the use of `browser.pause()`
+* [no-browser-sleep][]: Discourage the use of `browser.sleep()`
+
+Here is a table with all the available rules sorted by the default error level:
 
 Rule                         | Default Error Level | Auto-fixable | Options
 ----                         | -------             | -----        | -----

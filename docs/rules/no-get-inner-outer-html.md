@@ -1,4 +1,4 @@
-# Warn about using `getInnerHtml()` and `getOuterHtml()` methods
+# Warn about using deprecated `getInnerHtml()` and `getOuterHtml()` methods
 
 Selenium [has deprecated `getInnerHtml()` and `getOuterHtml()` methods in version 2.53](https://github.com/SeleniumHQ/selenium/blob/96ed95a97405fa267eea09c4008cda9e7703e84d/javascript/node/selenium-webdriver/CHANGES.md#change-summary).
 And, hence, Protractor itself _does not have these methods documented_ as a part of [public API](http://www.protractortest.org/#/api) anymore.

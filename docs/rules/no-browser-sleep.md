@@ -1,4 +1,4 @@
-# Discourage the use of `browser.sleep()` (no-browser-sleep)
+# Discourage the use of `browser.sleep()`
 
 Ensure `browser.sleep()` is not used.
 

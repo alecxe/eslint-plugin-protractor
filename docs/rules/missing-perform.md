@@ -1,4 +1,4 @@
-# Enforce valid `browser.actions()` usage (missing-perform)
+# Enforce valid `browser.actions()` usage
 
 Ensure `perform()` is called on `browser.actions()` chain of actions.
 
