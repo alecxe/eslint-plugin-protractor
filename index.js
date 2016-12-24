@@ -30,6 +30,7 @@ var noArrayFinderMethods = require('./lib/rules/no-array-finder-methods')
 var validLocatorType = require('./lib/rules/valid-locator-type')
 var noCompoundClasses = require('./lib/rules/no-compound-classes')
 var useCountMethod = require('./lib/rules/use-count-method')
+var noBrowserDriver = require('./lib/rules/no-browser-driver')
 
 module.exports = {
   rules: {
@@ -62,7 +63,8 @@ module.exports = {
     'no-array-finder-methods': noArrayFinderMethods,
     'valid-locator-type': validLocatorType,
     'no-compound-classes': noCompoundClasses,
-    'use-count-method': useCountMethod
+    'use-count-method': useCountMethod,
+    'no-browser-driver': noBrowserDriver
   },
   configs: {
     recommended: {
@@ -96,7 +98,8 @@ module.exports = {
         'protractor/no-angular-attributes': 1,
         'protractor/use-count-method': 1,
         'protractor/use-promise-all': 0,
-        'protractor/by-css-shortcut': 0
+        'protractor/by-css-shortcut': 0,
+        'protractor/no-browser-driver': 0
       },
       globals: {
         'browser': false,

@@ -77,6 +77,7 @@ There are various types of rules implemented in the plugin. Here is a rough cate
 * [no-describe-selectors][]: Discourage nested selectors within describe blocks
 * [no-browser-pause][]: Discourage the use of `browser.pause()`
 * [no-browser-sleep][]: Discourage the use of `browser.sleep()`
+* [no-browser-driver][]: Discourage the use of `browser.driver` instead of `browser` directly
 
 Here is a table with all the available rules sorted by the default error level:
 
@@ -112,6 +113,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [use-count-method][]         | 1                   |              |
 [use-promise-all][]          | 0 (Turned off)      |              |
 [by-css-shortcut][]          | 0                   |              |
+[no-browser-driver][]        | 0                   |              |
 
 For example, the `missing-perform` rule is enabled by default and will cause
 ESLint to throw an error (with an exit code of `1`) when triggered.
@@ -160,6 +162,7 @@ See [configuring rules][] for more information.
 [valid-locator-type]: docs/rules/valid-locator-type.md
 [no-compound-classes]: docs/rules/no-compound-classes.md
 [use-count-method]: docs/rules/use-count-method.md
+[no-browser-driver]: docs/rules/no-browser-driver.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration
