@@ -60,6 +60,7 @@ There are various types of rules implemented in the plugin. Here is a rough cate
 * [use-simple-repeaters][]: Discourage using extended `ng-repeat` syntax in `by.repeater()` locators
 * [no-repetitive-locators][]: Discourage repeating locators
 * [no-repetitive-selectors][]: Discourage repeating parts of CSS selectors
+* [valid-by-id][]: Prohibit use of invalid ID values when using `by.id`
 
 #### Style Guide Recommendations and Best Practices
 
@@ -78,7 +79,6 @@ There are various types of rules implemented in the plugin. Here is a rough cate
 * [no-browser-pause][]: Discourage the use of `browser.pause()`
 * [no-browser-sleep][]: Discourage the use of `browser.sleep()`
 * [no-browser-driver][]: Discourage the use of `browser.driver` instead of `browser` directly
-* [valid-by-id][]: Prohibit use of invalid ID values when using `by.id`
 
 Here is a table with all the available rules sorted by the default error level:
 
@@ -91,7 +91,6 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-array-finder-methods][]  | 2                   |              |
 [valid-locator-type][]       | 2                   |              |
 [no-compound-classes][]      | 2                   |              |
-[valid-by-id][]              | 2                   |              |
 [missing-wait-message][]     | 1 (Warning)         |              |
 [no-browser-sleep][]         | 1                   |              |
 [no-by-xpath][]              | 1                   |              |
@@ -113,6 +112,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-repetitive-selectors][]  | 1                   |              |
 [no-get-inner-outer-html][]  | 1                   |              |
 [use-count-method][]         | 1                   |              |
+[valid-by-id][]              | 1                   |              |
 [use-promise-all][]          | 0 (Turned off)      |              |
 [by-css-shortcut][]          | 0                   |              |
 [no-browser-driver][]        | 0                   |              |

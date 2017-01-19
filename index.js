@@ -78,7 +78,6 @@ module.exports = {
         'protractor/no-array-finder-methods': 2,
         'protractor/valid-locator-type': 2,
         'protractor/no-compound-classes': 2,
-        'protractor/valid-by-id': 2,
         'protractor/missing-wait-message': 1,
         'protractor/no-browser-sleep': 1,
         'protractor/no-by-xpath': 1,
@@ -100,6 +99,7 @@ module.exports = {
         'protractor/no-get-inner-outer-html': 1,
         'protractor/no-angular-attributes': 1,
         'protractor/use-count-method': 1,
+        'protractor/valid-by-id': 1,
         'protractor/use-promise-all': 0,
         'protractor/by-css-shortcut': 0,
         'protractor/no-browser-driver': 0
