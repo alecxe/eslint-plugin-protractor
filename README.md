@@ -78,6 +78,7 @@ There are various types of rules implemented in the plugin. Here is a rough cate
 * [no-browser-pause][]: Discourage the use of `browser.pause()`
 * [no-browser-sleep][]: Discourage the use of `browser.sleep()`
 * [no-browser-driver][]: Discourage the use of `browser.driver` instead of `browser` directly
+* [valid-by-id][]: Prohibit use of invalid ID values when using `by.id`
 
 Here is a table with all the available rules sorted by the default error level:
 
@@ -90,6 +91,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-array-finder-methods][]  | 2                   |              |
 [valid-locator-type][]       | 2                   |              |
 [no-compound-classes][]      | 2                   |              |
+[valid-by-id][]              | 2                   |              |
 [missing-wait-message][]     | 1 (Warning)         |              |
 [no-browser-sleep][]         | 1                   |              |
 [no-by-xpath][]              | 1                   |              |
@@ -163,6 +165,7 @@ See [configuring rules][] for more information.
 [no-compound-classes]: docs/rules/no-compound-classes.md
 [use-count-method]: docs/rules/use-count-method.md
 [no-browser-driver]: docs/rules/no-browser-driver.md
+[valid-by-id]: docs/rules/valid-by-id.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration
