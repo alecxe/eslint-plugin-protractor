@@ -31,6 +31,7 @@ var validLocatorType = require('./lib/rules/valid-locator-type')
 var noCompoundClasses = require('./lib/rules/no-compound-classes')
 var useCountMethod = require('./lib/rules/use-count-method')
 var noBrowserDriver = require('./lib/rules/no-browser-driver')
+var validById = require('./lib/rules/valid-by-id')
 
 module.exports = {
   rules: {
@@ -64,7 +65,8 @@ module.exports = {
     'valid-locator-type': validLocatorType,
     'no-compound-classes': noCompoundClasses,
     'use-count-method': useCountMethod,
-    'no-browser-driver': noBrowserDriver
+    'no-browser-driver': noBrowserDriver,
+    'valid-by-id': validById
   },
   configs: {
     recommended: {
@@ -97,6 +99,7 @@ module.exports = {
         'protractor/no-get-inner-outer-html': 1,
         'protractor/no-angular-attributes': 1,
         'protractor/use-count-method': 1,
+        'protractor/valid-by-id': 1,
         'protractor/use-promise-all': 0,
         'protractor/by-css-shortcut': 0,
         'protractor/no-browser-driver': 0
