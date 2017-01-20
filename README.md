@@ -60,7 +60,7 @@ There are various types of rules implemented in the plugin. Here is a rough cate
 * [use-simple-repeaters][]: Discourage using extended `ng-repeat` syntax in `by.repeater()` locators
 * [no-repetitive-locators][]: Discourage repeating locators
 * [no-repetitive-selectors][]: Discourage repeating parts of CSS selectors
-* [valid-by-id][]: Prohibit use of invalid ID values when using `by.id`
+* [valid-by-id][]: Prohibit use of invalid ID value when using `by.id()` locator
 
 #### Style Guide Recommendations and Best Practices
 
