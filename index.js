@@ -32,6 +32,7 @@ var noCompoundClasses = require('./lib/rules/no-compound-classes')
 var useCountMethod = require('./lib/rules/use-count-method')
 var noBrowserDriver = require('./lib/rules/no-browser-driver')
 var validById = require('./lib/rules/valid-by-id')
+var validByTagName = require('./lib/rules/valid-by-tagname')
 
 module.exports = {
   rules: {
@@ -66,7 +67,8 @@ module.exports = {
     'no-compound-classes': noCompoundClasses,
     'use-count-method': useCountMethod,
     'no-browser-driver': noBrowserDriver,
-    'valid-by-id': validById
+    'valid-by-id': validById,
+    'valid-by-tagname': validByTagName
   },
   configs: {
     recommended: {
