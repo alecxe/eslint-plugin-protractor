@@ -61,6 +61,7 @@ There are various types of rules implemented in the plugin. Here is a rough cate
 * [no-repetitive-locators][]: Discourage repeating locators
 * [no-repetitive-selectors][]: Discourage repeating parts of CSS selectors
 * [valid-by-id][]: Prohibit use of invalid ID value when using `by.id()` locator
+* [valid-by-tagname][]: Prohibit use of invalid Html Tag Name value when using `by.tagName()` locator
 
 #### Style Guide Recommendations and Best Practices
 
@@ -113,6 +114,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-get-inner-outer-html][]  | 1                   |              |
 [use-count-method][]         | 1                   |              |
 [valid-by-id][]              | 1                   |              |
+[valid-by-tagname][]         | 1                   |              |
 [use-promise-all][]          | 0 (Turned off)      |              |
 [by-css-shortcut][]          | 0                   |              |
 [no-browser-driver][]        | 0                   |              |
@@ -166,6 +168,7 @@ See [configuring rules][] for more information.
 [use-count-method]: docs/rules/use-count-method.md
 [no-browser-driver]: docs/rules/no-browser-driver.md
 [valid-by-id]: docs/rules/valid-by-id.md
+[valid-by-tagname]: docs/rules/valid-by-tagname.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration

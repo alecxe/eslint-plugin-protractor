@@ -102,6 +102,7 @@ module.exports = {
         'protractor/no-angular-attributes': 1,
         'protractor/use-count-method': 1,
         'protractor/valid-by-id': 1,
+        'protractor/valid-by-tagname': 1,
         'protractor/use-promise-all': 0,
         'protractor/by-css-shortcut': 0,
         'protractor/no-browser-driver': 0
