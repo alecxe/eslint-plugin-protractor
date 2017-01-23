@@ -14,7 +14,8 @@ eslintTester.run('valid-by-tagname', rule, {
     'element(by.tagName("Area"));',
     'element(by.tagName("BlockQuote"));',
     'element(by.tagName("h1"));',
-    'element(by.tagName("H1"));'
+    'element(by.tagName("H1"));',
+    'element(by.tagName("my-custom-tag"));'
   ],
 
   invalid: [
@@ -58,6 +59,18 @@ eslintTester.run('valid-by-tagname', rule, {
       code: 'element(by.tagName("12345"));',
       errors: [{
         message: 'Invalid TagName value: "12345"'
+      }]
+    },
+    {
+      code: 'element(by.tagName("-"));',
+      errors: [{
+        message: 'Invalid TagName value: "-"'
+      }]
+    },
+    {
+      code: 'element(by.tagName("customtag-"));',
+      errors: [{
+        message: 'Invalid TagName value: "customtag-"'
       }]
     }
   ]

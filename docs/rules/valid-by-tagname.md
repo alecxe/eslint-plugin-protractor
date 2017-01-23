@@ -1,7 +1,13 @@
 # Prohibit use of invalid Tag Name value when using `by.tagName()` locator
 
-Ensure a valid Tag Name is being used with `by.tagName()` locator. [A valid Tag Name](https://www.w3.org/TR/html/syntax.html#tag-name) should only
-contain alphanumeric and cannot start with a number.
+Ensure a valid Tag Name is being used with `by.tagName()` locator. 
+The rule supports [HTML specifications]((https://www.w3.org/TR/html/syntax.html#tag-name)) and
+Angular's ability to create custom elements via directives. A Tag Name is considered valid when:
+ 
+ - It can contain alphanumeric characters.
+ - It can contain the dash`(-)` symbol.
+ - It cannot start with dash or a number.
+ - It cannot end with dash.
 
 This rule is very useful for notifying when an invalid Tag Name is being used. 
 It will also prevent unintentionally putting different types of locators instead of the actual Tag name.
@@ -18,6 +24,8 @@ element(by.tagName("multiple tagnames"));
 element(by.tagName('option[value="Test"]'));
 element(by.tagName(" div "));
 element(by.tagName("12345"));
+element(by.tagName("-"));
+element(by.tagName("customtag-"));
 ```
 
 The following patterns are not errors:
@@ -31,4 +39,5 @@ element(by.tagName("Area"));
 element(by.tagName("BlockQuote"));
 element(by.tagName("h1"));
 element(by.tagName("H1"));
+element(by.tagName("my-custom-tag"));
 ```
