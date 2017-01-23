@@ -19,9 +19,9 @@ eslintTester.run('valid-by-tagname', rule, {
 
   invalid: [
     {
-      code: 'element(by.tagName("customTagName"));',
+      code: 'element(by.tagName("_customTagName"));',
       errors: [{
-        message: 'Invalid TagName value: "customTagName"'
+        message: 'Invalid TagName value: "_customTagName"'
       }]
     },
     {
@@ -31,15 +31,15 @@ eslintTester.run('valid-by-tagname', rule, {
       }]
     },
     {
-      code: 'element(by.tagName("_blockquote"));',
+      code: 'element(by.tagName("blockquote:"));',
       errors: [{
-        message: 'Invalid TagName value: "_blockquote"'
+        message: 'Invalid TagName value: "blockquote:"'
       }]
     },
     {
-      code: 'element(by.tagName("divs"));',
+      code: 'element(by.tagName("multiple tagnames"));',
       errors: [{
-        message: 'Invalid TagName value: "divs"'
+        message: 'Invalid TagName value: "multiple tagnames"'
       }]
     },
     {
@@ -52,6 +52,12 @@ eslintTester.run('valid-by-tagname', rule, {
       code: 'element(by.tagName(" div "));',
       errors: [{
         message: 'Invalid TagName value: " div "'
+      }]
+    },
+    {
+      code: 'element(by.tagName("12345"));',
+      errors: [{
+        message: 'Invalid TagName value: "12345"'
       }]
     }
   ]
