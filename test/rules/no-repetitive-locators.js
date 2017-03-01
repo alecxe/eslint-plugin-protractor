@@ -20,7 +20,21 @@ eslintTester.run('no-repetitive-locators', rule, {
       '  this.child1 = this.parent.$("div:first-of-type");',
       '  this.child2 = this.parent.$("#subcontainer > .add-client");',
       '}'
-    ])
+    ]),
+    {
+      code: toCode([
+        'class Helper {',
+        '  getChild(locatorOrSelector) {',
+        '    return this.element.$(locatorOrSelector);',
+        '  }',
+
+        '  getChildren(locatorOrSelector) {',
+        '    return this.element.$$(locatorOrSelector);',
+        '  }',
+        '}'
+      ]),
+      parserOptions: { ecmaVersion: 6 }
+    }
   ],
 
   invalid: [
