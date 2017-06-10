@@ -110,6 +110,14 @@ eslintTester.run('no-angular-attributes', rule, {
           message: 'Unexpected Angular attribute "data-ng-src" inside a CSS selector'
         }
       ]
+    },
+    {
+      code: 'element(by.css("[ng-reflect-name=email]"));',
+      errors: [
+        {
+          message: 'Unexpected Angular attribute "ng-reflect-name" inside a CSS selector'
+        }
+      ]
     }
   ]
 })
