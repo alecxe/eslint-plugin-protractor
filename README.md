@@ -22,7 +22,7 @@ The plugin would be of the most help if configured to run in your IDE of choice 
 
 ![Example](https://raw.githubusercontent.com/alecxe/eslint-plugin-protractor/master/docs/media/ws_demo.gif)
 
-*This gif shows integration of ESLint with eslint-plugin-protractor into WebStorm IDE. Find out more at [WebStorm ESLint configuration][https://www.jetbrains.com/help/webstorm/eslint.html].*
+*This gif shows integration of ESLint with eslint-plugin-protractor into WebStorm IDE. Find out more at [WebStorm ESLint configuration](https://www.jetbrains.com/help/webstorm/eslint.html).*
 
 ## Installation
 
