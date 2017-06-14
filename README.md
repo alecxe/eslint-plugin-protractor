@@ -20,6 +20,19 @@ but would also help maintaining good and reliable element locators.
 
 The plugin would be of the most help if configured to run in your IDE of choice on the fly.
 
+![Example](https://raw.githubusercontent.com/alecxe/eslint-plugin-protractor/master/docs/media/ws_demo.gif)
+
+*This gif shows integration of ESLint with esLint-plugin-protractor into WebStorm IDE. Find out more at [WebStorm ESLint configuration][https://www.jetbrains.com/help/webstorm/eslint.html].*
+
+## Installation
+
+Install [ESLint](https://www.github.com/eslint/eslint) and this plugin either locally or globally.
+
+```sh
+$ npm install eslint --save-dev
+$ npm install eslint-plugin-protractor --save-dev
+```
+
 ## Usage
 
 1. Install `eslint-plugin-protractor` as a dev-dependency:
