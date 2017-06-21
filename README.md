@@ -59,6 +59,7 @@ There are various types of rules implemented in the plugin. Here is a rough cate
 * [no-array-finder-methods][]: Disallow using `ElementArrayFinder` methods on `ElementFinder`
 * [array-callback-return][]: Enforce `return` statements in callbacks of `ElementArrayFinder` methods
 * [no-get-inner-outer-html][]: Warn about using deprecated `getInnerHtml()` and `getOuterHtml()` methods
+* [no-get-raw-id][]: Warn about using removed `getRawId()` method
 * [no-promise-in-if][]: Warn if promise is checked for truthiness inside an `if` condition
 
 #### Locating Elements
@@ -105,6 +106,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-array-finder-methods][]  | 2                   |              |
 [valid-locator-type][]       | 2                   |              |
 [no-compound-classes][]      | 2                   |              |
+[no-get-raw-id][]            | 2                   |              |
 [missing-wait-message][]     | 1 (Warning)         |              |
 [no-browser-sleep][]         | 1                   |              |
 [no-by-xpath][]              | 1                   |              |
@@ -182,6 +184,7 @@ See [configuring rules][] for more information.
 [no-browser-driver]: docs/rules/no-browser-driver.md
 [valid-by-id]: docs/rules/valid-by-id.md
 [valid-by-tagname]: docs/rules/valid-by-tagname.md
+[no-get-raw-id]: docs/rules/no-get-raw-id.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration

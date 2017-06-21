@@ -1,27 +1,25 @@
-# Warn about using deprecated `getInnerHtml()` and `getOuterHtml()` methods
+# Warn about using removed `getRawId()` method
 
-Selenium [has deprecated `getInnerHtml()` and `getOuterHtml()` methods in version 2.53](https://github.com/SeleniumHQ/selenium/blob/96ed95a97405fa267eea09c4008cda9e7703e84d/javascript/node/selenium-webdriver/CHANGES.md#change-summary).
-And, hence, Protractor itself _does not have these methods documented_ as a part of [public API](http://www.protractortest.org/#/api) anymore.
+`getRawId()` method has been removed in [`Protractor` 5.0.0](https://github.com/angular/protractor/blob/ea72d5588aef983aa84705abd1ad1afa36065be7/CHANGELOG.md#500) and in [`Selenium` 3.0.0](https://github.com/SeleniumHQ/selenium/blob/427307d6e24000d7db68e8c36362fab05c477cce/javascript/node/selenium-webdriver/CHANGES.md#v300-beta-1). 
+Use `getId()` method instead.
 
 ## Rule details
 
-Any use of the following patterns are considered warnings:
+Any use of the following patterns are considered errors:
 
 ```js
-expect(element(by.id("myid")).getInnerHtml()).toEqual("test");
-expect(element(by.id("myid")).getOuterHtml()).toEqual("test");
-element.all(by.css(".class")).first().getOuterHtml();
-element(by.id("id")).all(by.css(".class")).last().getInnerHtml();
-$$(".class").first().getOuterHtml();
-$(".class").getInnerHtml().then(function (html) { console.log(html) });
+expect(element(by.id("myid")).getRawId()).toEqual("id");
+element.all(by.css(".class")).first().getRawId();
+element(by.id("id")).all(by.css(".class")).last().getRawId();
+$$(".class").first().getRawId();
+$(".class").getRawId().then(function (id) { console.log(id) });
 ```
 
 The following patterns are not warnings:
 
 ```js
-expect(element(by.id("myid")).getText()).toEqual("test");
-getInnerHtml();
-var html = getOuterHtml();
-elm.getInnerHTML();
-elm.getOuterHTML();
+expect(element(by.id("myid")).getId()).toEqual("id");
+getRawId();
+var html = getRawId();
+elm.getRawId();
 ```

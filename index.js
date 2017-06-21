@@ -33,6 +33,7 @@ var useCountMethod = require('./lib/rules/use-count-method')
 var noBrowserDriver = require('./lib/rules/no-browser-driver')
 var validById = require('./lib/rules/valid-by-id')
 var validByTagName = require('./lib/rules/valid-by-tagname')
+var noGetRawId = require('./lib/rules/no-get-raw-id')
 
 module.exports = {
   rules: {
@@ -68,7 +69,8 @@ module.exports = {
     'use-count-method': useCountMethod,
     'no-browser-driver': noBrowserDriver,
     'valid-by-id': validById,
-    'valid-by-tagname': validByTagName
+    'valid-by-tagname': validByTagName,
+    'no-get-raw-id': noGetRawId
   },
   configs: {
     recommended: {
@@ -78,6 +80,7 @@ module.exports = {
         'protractor/correct-chaining': 2,
         'protractor/no-invalid-selectors': 2,
         'protractor/no-array-finder-methods': 2,
+        'protractor/no-get-raw-id': 2,
         'protractor/valid-locator-type': 2,
         'protractor/no-compound-classes': 2,
         'protractor/missing-wait-message': 1,
