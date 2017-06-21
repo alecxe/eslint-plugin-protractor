@@ -11,7 +11,7 @@ eslintTester.run('no-get-raw-id', rule, {
     'getRawId();',
     'var html = getRawId();',
     'elm.getRawId();',
-    'elm.getOuterHTML();'
+    'elm.getOuterHtml();'
   ],
 
   invalid: [

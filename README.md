@@ -106,6 +106,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-array-finder-methods][]  | 2                   |              |
 [valid-locator-type][]       | 2                   |              |
 [no-compound-classes][]      | 2                   |              |
+[no-get-inner-outer-html][]  | 2                   |              |
 [no-get-raw-id][]            | 2                   |              |
 [missing-wait-message][]     | 1 (Warning)         |              |
 [no-browser-sleep][]         | 1                   |              |
@@ -126,7 +127,6 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-execute-script][]        | 1                   |              | requires plugin "settings"
 [no-repetitive-locators][]   | 1                   |              |
 [no-repetitive-selectors][]  | 1                   |              |
-[no-get-inner-outer-html][]  | 1                   |              |
 [use-count-method][]         | 1                   |              |
 [valid-by-id][]              | 1                   |              |
 [valid-by-tagname][]         | 1                   |              |

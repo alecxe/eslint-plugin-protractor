@@ -10,8 +10,8 @@ eslintTester.run('no-get-inner-outer-html', rule, {
     'expect(element(by.id("myid")).getText()).toEqual("test");',
     'getInnerHtml();',
     'var html = getOuterHtml();',
-    'elm.getInnerHTML();',
-    'elm.getOuterHTML();'
+    'elm.getInnerHtml();',
+    'elm.getOuterHtml();'
   ],
 
   invalid: [
@@ -25,6 +25,14 @@ eslintTester.run('no-get-inner-outer-html', rule, {
     },
     {
       code: 'expect(element(by.id("myid")).getOuterHtml()).toEqual("test");',
+      errors: [
+        {
+          message: 'Unexpected "getOuterHtml()"'
+        }
+      ]
+    },
+    {
+      code: 'element.all(by.css(".class")).get(1).getOuterHtml();',
       errors: [
         {
           message: 'Unexpected "getOuterHtml()"'

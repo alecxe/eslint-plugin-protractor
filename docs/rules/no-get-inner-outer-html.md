@@ -1,11 +1,11 @@
-# Warn about using deprecated `getInnerHtml()` and `getOuterHtml()` methods
+# Warn about using removed `getInnerHtml()` and `getOuterHtml()` methods
 
-Selenium [has deprecated `getInnerHtml()` and `getOuterHtml()` methods in version 2.53](https://github.com/SeleniumHQ/selenium/blob/96ed95a97405fa267eea09c4008cda9e7703e84d/javascript/node/selenium-webdriver/CHANGES.md#change-summary).
-And, hence, Protractor itself _does not have these methods documented_ as a part of [public API](http://www.protractortest.org/#/api) anymore.
+`Selenium` [has removed `getInnerHtml()` and `getOuterHtml()` methods from the API](https://github.com/SeleniumHQ/selenium/blob/427307d6e24000d7db68e8c36362fab05c477cce/javascript/node/selenium-webdriver/CHANGES.md#api-changes-4).
+And, hence, [`Protractor` removed them as well in version 5.0.0](https://github.com/angular/protractor/blob/ea72d5588aef983aa84705abd1ad1afa36065be7/CHANGELOG.md#500).
 
 ## Rule details
 
-Any use of the following patterns are considered warnings:
+Any use of the following patterns are considered errors:
 
 ```js
 expect(element(by.id("myid")).getInnerHtml()).toEqual("test");
@@ -22,6 +22,6 @@ The following patterns are not warnings:
 expect(element(by.id("myid")).getText()).toEqual("test");
 getInnerHtml();
 var html = getOuterHtml();
-elm.getInnerHTML();
-elm.getOuterHTML();
+elm.getInnerHtml();
+elm.getOuterHtml();
 ```
