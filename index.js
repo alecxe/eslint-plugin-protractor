@@ -34,6 +34,7 @@ var noBrowserDriver = require('./lib/rules/no-browser-driver')
 var validById = require('./lib/rules/valid-by-id')
 var validByTagName = require('./lib/rules/valid-by-tagname')
 var noGetRawId = require('./lib/rules/no-get-raw-id')
+var noGetLocationAbsUrl = require('./lib/rules/no-get-location-abs-url')
 
 module.exports = {
   rules: {
@@ -70,7 +71,8 @@ module.exports = {
     'no-browser-driver': noBrowserDriver,
     'valid-by-id': validById,
     'valid-by-tagname': validByTagName,
-    'no-get-raw-id': noGetRawId
+    'no-get-raw-id': noGetRawId,
+    'no-get-location-abs-url': noGetLocationAbsUrl
   },
   configs: {
     recommended: {
@@ -106,6 +108,7 @@ module.exports = {
         'protractor/use-count-method': 1,
         'protractor/valid-by-id': 1,
         'protractor/valid-by-tagname': 1,
+        'protractor/no-get-location-abs-url': 1,
         'protractor/use-promise-all': 0,
         'protractor/by-css-shortcut': 0,
         'protractor/no-browser-driver': 0

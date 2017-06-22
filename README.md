@@ -60,6 +60,7 @@ There are various types of rules implemented in the plugin. Here is a rough cate
 * [array-callback-return][]: Enforce `return` statements in callbacks of `ElementArrayFinder` methods
 * [no-get-inner-outer-html][]: Warn about using deprecated `getInnerHtml()` and `getOuterHtml()` methods
 * [no-get-raw-id][]: Warn about using removed `getRawId()` method
+* [no-get-location-abs-url][]: Warn about using deprecated `getLocationAbsUrl()` method
 * [no-promise-in-if][]: Warn if promise is checked for truthiness inside an `if` condition
 
 #### Locating Elements
@@ -122,6 +123,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [no-get-in-it][]             | 1                   |              |
 [array-callback-return][]    | 1                   |              |
 [no-absolute-url][]          | 1                   |              |
+[no-get-location-abs-url][]  | 1                   |              |
 [no-expect-in-po][]          | 1                   |              | requires plugin "settings"
 [no-promise-in-if][]         | 1                   |              | 
 [no-execute-script][]        | 1                   |              | requires plugin "settings"
@@ -185,6 +187,7 @@ See [configuring rules][] for more information.
 [valid-by-id]: docs/rules/valid-by-id.md
 [valid-by-tagname]: docs/rules/valid-by-tagname.md
 [no-get-raw-id]: docs/rules/no-get-raw-id.md
+[no-get-location-abs-url]: docs/rules/no-get-location-abs-url.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration
