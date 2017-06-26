@@ -77,6 +77,7 @@ There are various types of rules implemented in the plugin. Here is a rough cate
 * [no-repetitive-selectors][]: Discourage repeating parts of CSS selectors
 * [valid-by-id][]: Prohibit use of invalid ID value when using `by.id()` locator
 * [valid-by-tagname][]: Prohibit use of invalid Html Tag Name value when using `by.tagName()` locator
+* [limit-selector-depth][]: Warn about potentially "deep" CSS selectors with too many nodes in the path
 
 #### Style Guide Recommendations and Best Practices
 
@@ -132,6 +133,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [use-count-method][]         | 1                   |              |
 [valid-by-id][]              | 1                   |              |
 [valid-by-tagname][]         | 1                   |              |
+[limit-selector-depth][]     | 1                   |              | number of nodes (default 5)
 [use-promise-all][]          | 0 (Turned off)      |              |
 [by-css-shortcut][]          | 0                   |              |
 [no-browser-driver][]        | 0                   |              |
@@ -182,6 +184,7 @@ See [configuring rules][] for more information.
 [no-array-finder-methods]: docs/rules/no-array-finder-methods.md
 [valid-locator-type]: docs/rules/valid-locator-type.md
 [no-compound-classes]: docs/rules/no-compound-classes.md
+[limit-selector-depth]: docs/rules/limit-selector-depth.md
 [use-count-method]: docs/rules/use-count-method.md
 [no-browser-driver]: docs/rules/no-browser-driver.md
 [valid-by-id]: docs/rules/valid-by-id.md

@@ -35,6 +35,7 @@ var validById = require('./lib/rules/valid-by-id')
 var validByTagName = require('./lib/rules/valid-by-tagname')
 var noGetRawId = require('./lib/rules/no-get-raw-id')
 var noGetLocationAbsUrl = require('./lib/rules/no-get-location-abs-url')
+var limitSelectorDepth = require('./lib/rules/limit-selector-depth')
 
 module.exports = {
   rules: {
@@ -72,7 +73,8 @@ module.exports = {
     'valid-by-id': validById,
     'valid-by-tagname': validByTagName,
     'no-get-raw-id': noGetRawId,
-    'no-get-location-abs-url': noGetLocationAbsUrl
+    'no-get-location-abs-url': noGetLocationAbsUrl,
+    'limit-selector-depth': limitSelectorDepth
   },
   configs: {
     recommended: {
@@ -108,6 +110,7 @@ module.exports = {
         'protractor/use-count-method': 1,
         'protractor/valid-by-id': 1,
         'protractor/valid-by-tagname': 1,
+        'protractor/limit-selector-depth': 1,
         'protractor/no-get-location-abs-url': 1,
         'protractor/use-promise-all': 0,
         'protractor/by-css-shortcut': 0,
