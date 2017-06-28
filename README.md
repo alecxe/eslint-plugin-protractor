@@ -213,7 +213,7 @@ See [ESLint documentation](http://eslint.org/docs/user-guide/configuring#extendi
 
 ## Author
 
-© 2016 Alexander Afanasyev
+© 2016-infinity Alexander Afanasyev and [contributors](https://github.com/alecxe/eslint-plugin-protractor/graphs/contributors).
 
 ## License
 
