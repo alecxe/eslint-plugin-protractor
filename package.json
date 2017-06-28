@@ -8,7 +8,7 @@
     "test": "tests"
   },
   "scripts": {
-    "pretest": "standard",
+    "pretest": "standard && eslint .",
     "test": "mocha",
     "watch": "mocha --watch",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",

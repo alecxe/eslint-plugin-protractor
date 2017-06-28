@@ -6,8 +6,35 @@ var eslintTester = new RuleTester()
 
 eslintTester.run('no-execute-script', rule, {
   valid: [
+    'var test = "bar"',
+    'test();',
+    'browser.get("test");',
+    'browser.browser',
+    'obj.executeScript("something");',
+    '',
+
     {
-      code: 'var test = "bar"'
+      code: 'test.test();',
+      settings: {
+        'eslint-plugin-protractor': {
+          paths: {
+            specs: ['**/*.spec.js', '*.spec.js']
+          }
+        }
+      },
+      filename: 'test.spec.js'
+    },
+
+    {
+      code: 'driver.executeScript("something");',
+      settings: {
+        'eslint-plugin-protractor': {
+          paths: {
+            specs: ['**/*.spec.js', '*.spec.js']
+          }
+        }
+      },
+      filename: 'test.spec.js'
     },
 
     {
