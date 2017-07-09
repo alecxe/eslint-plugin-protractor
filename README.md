@@ -63,6 +63,7 @@ There are various types of rules implemented in the plugin. Here is a rough cate
 * [no-get-raw-id][]: Warn about using removed `getRawId()` method
 * [no-get-location-abs-url][]: Warn about using deprecated `getLocationAbsUrl()` method
 * [no-promise-in-if][]: Warn if promise is checked for truthiness inside an `if` condition
+* [bare-element-finders][]: Warn if a bare `ElementFinder` or `ElementArrayFinder` is declared with no applied action
 
 #### Locating Elements
 
@@ -135,6 +136,7 @@ Rule                         | Default Error Level | Auto-fixable | Options
 [valid-by-id][]              | 1                   |              |
 [valid-by-tagname][]         | 1                   |              |
 [limit-selector-depth][]     | 1                   |              | number of nodes (default 5)
+[bare-element-finders][]     | 1                   |              | 
 [use-promise-all][]          | 0 (Turned off)      |              |
 [by-css-shortcut][]          | 0                   |              |
 [no-browser-driver][]        | 0                   |              |
@@ -192,6 +194,7 @@ See [configuring rules][] for more information.
 [valid-by-tagname]: docs/rules/valid-by-tagname.md
 [no-get-raw-id]: docs/rules/no-get-raw-id.md
 [no-get-location-abs-url]: docs/rules/no-get-location-abs-url.md
+[bare-element-finders]: docs/rules/bare-element-finders.md
 [configuring rules]: http://eslint.org/docs/user-guide/configuring#configuring-rules
 
 ## Recommended configuration
