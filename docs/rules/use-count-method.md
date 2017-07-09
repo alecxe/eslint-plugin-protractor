@@ -16,7 +16,7 @@ element.all(by.repeater('product in products')).then(function (products) {
 
 ## Rule details
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element.all(by.repeater('product in products')).then(function (products) {
@@ -28,7 +28,7 @@ element.all(by.repeater('product in products')).then(function (products) {
 });
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 expect(element.all(by.repeater('product in products')).count()).toBeGreaterThan(1);

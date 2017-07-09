@@ -17,7 +17,7 @@ element(by.css('.parent')).all(by.css('.child'));
 
 ## Rule details
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element(by.css('.parent')).element.all(by.css('.child'));
@@ -26,7 +26,7 @@ element.all(by.css('.child')).first().element.all(by.css('.child'));
 $$('.parent').first().element.all(by.css('.child'));
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element(by.css('.parent')).all(by.css('.child'));

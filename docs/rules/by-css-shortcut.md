@@ -6,7 +6,7 @@ Recommend using `$` and `$$` shortcuts instead of `element(by.css())` and `eleme
 
 The rule is disabled by default.
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element(by.css(".class"));
@@ -15,7 +15,7 @@ element(by.id("id")).element(by.css(".class"));
 element(by.id("id")).all(by.css(".class"));
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 $(".class");

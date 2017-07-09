@@ -5,7 +5,7 @@ Additionally, this rule would warn if there is a "by"-type locator passed to `$(
 
 ## Rule details
 
-Any use of the following patterns are considered errors:
+:thumbsdown: Any use of the following patterns are considered errors:
 
 ```js
 element(".class");
@@ -23,7 +23,7 @@ $(".class1").$$(by.css(".class2"));
 $$(".class1").$$(by.css(".class2"));
 ```
 
-The following patterns are not errors:
+:thumbsup: The following patterns are not errors:
 
 ```js
 element(by.css(".class"));

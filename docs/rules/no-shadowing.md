@@ -13,7 +13,7 @@ Here is the list of global variables checked for not to be shadowed:
  * `$`
  * `$$`
 
-The following patterns are considered warnings: 
+:thumbsdown: The following patterns are considered warnings: 
 
 ```js
 var element = "something";
@@ -26,7 +26,7 @@ for (var by = 0; by < 10; ++by) {}
 try { json = JSON.parse(input) } catch (browser) {}
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 var element2 = "something";

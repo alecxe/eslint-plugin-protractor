@@ -6,7 +6,7 @@ Ensure that there are no compound class names (multiple space-delimited classes)
 
 ## Rule details
 
-Any use of the following patterns are considered errors:
+:thumbsdown: Any use of the following patterns are considered errors:
 
 ```js
 element(by.className("class1 class2"));
@@ -15,7 +15,7 @@ element(by.id("myid")).all(by.className("class1 class2 class3"));
 element(by.id("myid")).element(by.className("class1 class2 class3"));
 ```
 
-The following patterns are not errors:
+:thumbsup: The following patterns are not errors:
 
 ```js
 element(by.css("tag1 tag2"));

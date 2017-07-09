@@ -2,7 +2,7 @@
 
 In support of the [DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) and to improve readability of page object fields definitions, this rule would try its best finding parts of CSS selectors that are unnecessarily repeated.
 
-Consider this Page Object:
+:thumbsdown: Consider this Page Object:
 
 ```js
 var MyPage = function () {
@@ -12,7 +12,7 @@ var MyPage = function () {
 }
 ```
 
-The `.container #parent` part in this case is repeated and should be reused instead:
+:thumbsup: The `.container #parent` part in this case is repeated and should be reused instead:
 
 ```js
 var MyPage = function () {

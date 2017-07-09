@@ -1,6 +1,8 @@
 # Recommend using `protractor.promise.all()` to resolve multiple promises 
 
-When multiple promises need to be resolved, it tends to increase the nestedness and complexity of the code. For example:
+When multiple promises need to be resolved, it tends to increase the nestedness and complexity of the code. 
+
+:thumbsdown: For example:
 
 ```js
 elm1.getText().then(function (text1) {
@@ -14,7 +16,7 @@ elm1.getText().then(function (text1) {
 });
 ```
 
-Instead, using `protractor.promise.all()` may help to resolve multiple promises "at once":
+:thumbsup: Instead, using `protractor.promise.all()` may help to resolve multiple promises "at once":
 
 ```js
 protractor.promise.all([

@@ -6,14 +6,14 @@ The rule currently does not allow to configure the test function names and will 
 
 ## Rule details
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 it("should do something", function() { browser.get("mypage"); });
 it("should do something", function() { browser.driver.get("mypage"); });
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 beforeEach(function() { browser.get("mypage"); });

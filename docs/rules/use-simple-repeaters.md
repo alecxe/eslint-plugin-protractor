@@ -22,7 +22,7 @@ And, this what would be better:
 
 The rule would warn if it detects a pipe - `|` inside a repeater or a `track by` substring.
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element.all(by.repeater("item in items | filter : x | orderBy : order | limitTo : limit as results"));
@@ -30,7 +30,7 @@ element.all(by.repeater("item in items | filter:searchTerm"));
 element.all(by.repeater("item in items track by $index"));
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element.all(by.repeater("item in items"));

@@ -11,7 +11,7 @@ Here is a mapping between the relevant attribute and a recommended locator:
  * `ng-repeat`/`data-ng-repeat` -> `by.repeater()` or `by.exactRepeater()`
  * `ng-options`/`data-ng-options` -> `by.options()`
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element(by.css("[ng-model=test]"));
@@ -24,7 +24,7 @@ $('[ng-options="item in items"]');
 $$('[data-ng-options="item in items"]');
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element(by.model("test"));

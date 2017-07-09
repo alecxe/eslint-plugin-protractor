@@ -1,6 +1,8 @@
 # Discourage repeating locators 
 
-This rule would warn if repetitive locators would be detected *in a single file* in support of the [DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). For example:
+This rule would warn if repetitive locators would be detected *in a single file* in support of the [DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself). 
+
+:thumbsdown: For example:
 
 ```js
 var MyPage = function () {
@@ -9,7 +11,9 @@ var MyPage = function () {
 }
 ```
 
-Here, `.mygrid` locator is used two times. A better version:
+Here, `.mygrid` locator is used two times. 
+
+:thumbsup: A better version:
 
 ```js
 var MyPage = function () {

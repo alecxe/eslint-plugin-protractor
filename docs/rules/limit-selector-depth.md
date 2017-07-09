@@ -22,7 +22,7 @@ Number of nodes is configurable, default value is `5`.
 
 This rule is based on [`css-selector-parser`](https://github.com/mdevils/node-css-selector-parser) parsing abilities.
 
-Any use of the following patterns are considered warnings (with the default depth value of `5`):
+:thumbsdown: Any use of the following patterns are considered warnings (with the default depth value of `5`):
 
 ```js
 element(by.css(".content > table > tbody > tr:nth-child(2) > td.cell > input#email"));
@@ -31,7 +31,7 @@ $(".content > table > tbody > tr:nth-child(2) > td.cell > input#email");
 $$(".content > table > tbody > tr:nth-child(2) > td.cell > input#email");
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element(by.css(".myclass"));

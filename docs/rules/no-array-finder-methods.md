@@ -10,7 +10,7 @@ Here is the current list of methods the rule is looking for:
 
     'first', 'last', 'get', 'filter', 'map', 'each', 'reduce', 'count'
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element(by.css(".class")).get(0);
@@ -25,7 +25,7 @@ $(".class1").element(by.css(".class2")).first();
 $(".class1").$(".class2").first();
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element.all(by.css(".class")).get(0);

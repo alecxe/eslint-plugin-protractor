@@ -5,7 +5,7 @@ The problem is - promise itself is "truthy" which might make things difficult to
 
 ## Rule details
 
-This is an example violation:
+:thumbsdown: This is an example violation:
 
 ```js
 var elm = $("#myid");
@@ -18,7 +18,7 @@ if (elm.isDisplayed()) {
 
 The code execution would never reach "do smth else" because `elm.isDisplayed()` would always be "truthy" no matter if the element is displayed or not.
 
-Instead, one has to explicitly resolve the promise to have a boolean value:
+:thumbsup: Instead, one has to explicitly resolve the promise to have a boolean value:
 
 ```js
 var elm = $("#myid");

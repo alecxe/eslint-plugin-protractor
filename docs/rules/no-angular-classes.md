@@ -16,7 +16,7 @@ Current list of Angular classes this rule would complain about (based on the [CS
  * `ng-touched`
  * `ng-untouched`
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element(by.css(".ng-scope"));
@@ -30,7 +30,7 @@ element(by.id("id")).$$(".ng-touched.myclass");
 element(by.id("id")).$("input.ng-untouched");
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element(by.css(".myclass"));

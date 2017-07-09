@@ -25,7 +25,7 @@ it would not be detected as a violation. Look into having [`array-callback-retur
 
 ## Rule details
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element.all(by.css(".myclass")).filter(function() {
@@ -42,7 +42,7 @@ $$(".myclass").filter(a ? function() {} : function() {});
 $$(".myclass").filter(function(){ return function() {}; }())
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element.all(by.css(".myclass")).filter(function(elm) { 

@@ -6,7 +6,7 @@ Ensure attributes used by Angular internally are not used to locate elements via
 
 The rule would scan attributes used inside CSS selectors and would complain about any attribute that starts with `ng-` or `data-ng-` or `x-ng-`.
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element(by.css("[ng-show=test]"));
@@ -20,7 +20,7 @@ element(by.id("id")).$$("[ng-blur^=expression], a[href^=/]");
 element(by.id("id")).$("[data-ng-pattern*='test']");
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element(by.css("input"));

@@ -14,7 +14,7 @@ It will also prevent unintentionally putting `id` attribute CSS selector instead
 
 ## Rule details
 
-Any use of the following patterns are considered errors when using `by.id`:
+:thumbsdown: Any use of the following patterns are considered errors when using `by.id`:
 
 ```js
 element(by.id("#id"));
@@ -25,7 +25,7 @@ element(by.id("invalid*id"));
 element(by.id("id with spaces"));
 ```
 
-The following patterns are not errors:
+:thumbsup: The following patterns are not errors:
 
 ```js
 element(by.id("validID"));

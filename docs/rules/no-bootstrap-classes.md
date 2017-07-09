@@ -9,7 +9,7 @@ Compare these classes with, for example, `product` or `itemPrice` classes - thes
 
 Current list of Bootstrap classes this rule would complain about can be viewed [here](../../lib/bootstrap-layout-classes.js) (hand-picked).
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element(by.css(".col-lg-12"));
@@ -23,7 +23,7 @@ element(by.id("id")).$$(".col-lg-offset-8.myclass");
 element(by.id("id")).$("input.col-lg-pull-8");
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element(by.css(".myclass"));

@@ -8,7 +8,7 @@ This rule works great when ESLint is tied up to your editor of choice to make ch
 
 This rule is almost entirely based on [`css-selector-parser`](https://github.com/mdevils/node-css-selector-parser) parsing abilities.
 
-Any use of the following patterns are considered errors:
+:thumbsdown: Any use of the following patterns are considered errors:
 
 ```js
 element(by.css("["));
@@ -22,7 +22,7 @@ element(by.id("id")).$$("input::first-type");
 element(by.id("id")).$("input::first-of--type()");
 ```
 
-The following patterns are not errors:
+:thumbsup: The following patterns are not errors:
 
 ```js
 element(by.css(".myclass"));

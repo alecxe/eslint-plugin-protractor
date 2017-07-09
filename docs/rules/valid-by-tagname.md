@@ -14,7 +14,7 @@ It will also prevent unintentionally putting different types of locators instead
 
 ## Rule details
 
-Any use of the following patterns are considered errors when using `by.tagName`:
+:thumbsdown: Any use of the following patterns are considered errors when using `by.tagName`:
 
 ```js
 element(by.tagName("_customTagName"));
@@ -28,7 +28,7 @@ element(by.tagName("-"));
 element(by.tagName("customtag-"));
 ```
 
-The following patterns are not errors:
+:thumbsup: The following patterns are not errors:
 
 ```js
 element(by.tagName("a"));

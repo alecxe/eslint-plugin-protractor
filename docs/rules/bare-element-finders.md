@@ -12,7 +12,7 @@ It is easy to forget to actually call an ElementFinder method and the rule would
 ## Rule details
 
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element(by.id('signin_submit_btn'));
@@ -27,7 +27,7 @@ $$(".class1").first().element(by.css(".class2"));
 $(".class1").$(".class2");
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element(by.id('signin_submit_btn')).click();

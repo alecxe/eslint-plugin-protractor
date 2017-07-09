@@ -6,7 +6,7 @@ Ensure raw selectors are not used within `describe` blocks.
 
 As described in [Protractor's documentation](https://github.com/angular/protractor/blob/master/docs/page-objects.md), it is recommended that query selectors be organized within Page Objects in order to keep code cleaner, more reusable, and easier to maintain.
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 describe(function () {
@@ -36,7 +36,7 @@ describe(function () {
 });
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 var AngularHomepage = function() {

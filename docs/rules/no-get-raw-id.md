@@ -5,7 +5,7 @@ Use `getId()` method instead.
 
 ## Rule details
 
-Any use of the following patterns are considered errors:
+:thumbsdown: Any use of the following patterns are considered errors:
 
 ```js
 expect(element(by.id("myid")).getRawId()).toEqual("id");
@@ -15,7 +15,7 @@ $$(".class").first().getRawId();
 $(".class").getRawId().then(function (id) { console.log(id) });
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 expect(element(by.id("myid")).getId()).toEqual("id");

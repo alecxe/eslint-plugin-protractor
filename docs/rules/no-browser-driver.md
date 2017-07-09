@@ -4,14 +4,14 @@ The rule would warn if using `browser.driver` instead of using `browser` directl
 
 ## Rule details
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 browser.driver.sleep(2000);
 var driver = browser.driver;
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 browser.sleep(1000);

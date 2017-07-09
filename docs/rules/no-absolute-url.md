@@ -7,14 +7,14 @@ This helps to easily switch to a different target application URL by simply chan
 
 ## Rule details
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 browser.get("http://google.com");
 browser.driver.get("https://google.com");
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 browser.get("login");

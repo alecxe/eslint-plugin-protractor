@@ -6,7 +6,7 @@ The `first()` and `last()` shortcuts are, generally speaking, more readable than
 
 ## Rule details
 
-Any use of the following patterns are considered warnings:
+:thumbsdown: Any use of the following patterns are considered warnings:
 
 ```js
 element.all(by.css(".class")).get(0);
@@ -17,7 +17,7 @@ element.all(by.css(".class")).get(0).getText();
 element.all(by.css(".class")).get(-1).getText();
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 element.all(by.css(".class")).first();

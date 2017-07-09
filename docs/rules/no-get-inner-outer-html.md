@@ -5,7 +5,7 @@ And, hence, [`Protractor` removed them as well in version 5.0.0](https://github.
 
 ## Rule details
 
-Any use of the following patterns are considered errors:
+:thumbsdown: Any use of the following patterns are considered errors:
 
 ```js
 expect(element(by.id("myid")).getInnerHtml()).toEqual("test");
@@ -16,7 +16,7 @@ $$(".class").first().getOuterHtml();
 $(".class").getInnerHtml().then(function (html) { console.log(html) });
 ```
 
-The following patterns are not warnings:
+:thumbsup: The following patterns are not warnings:
 
 ```js
 expect(element(by.id("myid")).getText()).toEqual("test");
