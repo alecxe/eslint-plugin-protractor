@@ -10,7 +10,6 @@ notifications:
     urls:
       - https://webhooks.gitter.im/e/adff3996681bbaef4a61
 node_js:
-  - '5'
   - '6'
   - '7'
   - '8'
