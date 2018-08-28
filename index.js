@@ -119,6 +119,14 @@ module.exports = {
         'protractor/by-css-shortcut': 0,
         'protractor/no-browser-driver': 0
       },
+      env: {
+        'protractor/globals': true
+      },
+      plugins: ['protractor']
+    }
+  },
+  environments: {
+    globals: {
       globals: {
         'browser': false,
         'protractor': false,
