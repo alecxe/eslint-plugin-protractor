@@ -28,6 +28,12 @@ eslintTester.run('no-repetitive-locators', rule, {
     ]),
     toCode([
       'var MyPage = function () {',
+      '  this.a = element.all(by.cssContainingText("p"));',
+      '  this.b = element.all(by.cssContainingText("p", "Dog"));',
+      '}'
+    ]),
+    toCode([
+      'var MyPage = function () {',
       '  this.parent = $(".container #parent");',
       '  this.child1 = this.parent.$("div:first-of-type");',
       '  this.child2 = this.parent.$("#subcontainer > .add-client");',
