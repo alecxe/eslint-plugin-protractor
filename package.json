@@ -10,10 +10,10 @@
   "scripts": {
     "pretest": "standard && eslint .",
     "test": "mocha",
-    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report html -- -R spec",
+    "coverage": "nyc --reporter=html ./node_modules/mocha/bin/_mocha -R spec",
     "watch": "mocha --watch",
     "semantic-release": "semantic-release",
-    "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
+    "coveralls": "nyc --reporter=text-lcov ./node_modules/mocha/bin/_mocha -R spec | coveralls && rm -rf ./coverage"
   },
   "standard": {
     "globals": [
@@ -52,8 +52,8 @@
     "coveralls": "^3.0.4",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.16.0",
-    "istanbul": "^0.4.3",
     "mocha": "^6.1.4",
+    "nyc": "^14.1.1",
     "semantic-release": "^15.13.18",
     "standard": "^12.0.1"
   },
