@@ -10,11 +10,10 @@ notifications:
     urls:
       - https://webhooks.gitter.im/e/adff3996681bbaef4a61
 node_js:
-  - '6'
-  - '7'
   - '8'
   - '9'
   - '10'
+  - '12'
   - 'node'
 before_install:
   - npm i -g npm@^2.0.0
