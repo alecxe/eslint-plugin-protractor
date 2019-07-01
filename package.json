@@ -15,6 +15,9 @@
     "semantic-release": "semantic-release",
     "coveralls": "nyc --reporter=text-lcov ./node_modules/mocha/bin/_mocha -R spec | coveralls && rm -rf ./coverage"
   },
+  "engines": {
+    "node": ">=8"
+  },
   "standard": {
     "globals": [
       "describe",
