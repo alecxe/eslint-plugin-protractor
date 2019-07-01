@@ -23,7 +23,7 @@ describe('eslint-plugin-protractor', function () {
     ruleFiles.forEach(function (file) {
       var ruleName = path.basename(file, '.js')
 
-      expect(plugin).to.have.deep.property('rules.' + ruleName)
+      expect(plugin).to.have.nested.property('rules.' + ruleName)
         .that.equals(require(rulesDir + ruleName))
     })
   })
@@ -32,7 +32,7 @@ describe('eslint-plugin-protractor', function () {
     ruleFiles.forEach(function (file) {
       var ruleName = path.basename(file, '.js')
 
-      expect(plugin).to.have.deep.property('configs.recommended.rules')
+      expect(plugin).to.have.nested.property('configs.recommended.rules')
         .that.has.property('protractor/' + ruleName)
         .that.is.oneOf([0, 1, 2, 'off', 'warn', 'error'])
     })

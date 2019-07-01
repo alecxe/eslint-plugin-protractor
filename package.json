@@ -12,7 +12,7 @@
     "test": "mocha",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha --report html -- -R spec",
     "watch": "mocha --watch",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "semantic-release": "semantic-release",
     "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage"
   },
   "standard": {
@@ -47,15 +47,15 @@
     "eslint": ">=2.0.0"
   },
   "devDependencies": {
-    "chai": "^3.5.0",
-    "commitizen": "^2.8.1",
-    "coveralls": "^2.11.9",
-    "cz-conventional-changelog": "^1.1.6",
-    "eslint": ">=2.0.0",
+    "chai": "^4.2.0",
+    "commitizen": "^3.1.1",
+    "coveralls": "^3.0.4",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.16.0",
     "istanbul": "^0.4.3",
-    "mocha": "^5.2.0",
-    "semantic-release": "^4.3.5",
-    "standard": "^7.1.2"
+    "mocha": "^6.1.4",
+    "semantic-release": "^15.13.18",
+    "standard": "^12.0.1"
   },
   "config": {
     "commitizen": {
