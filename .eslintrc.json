@@ -15,6 +15,7 @@
             "error",
             "unix"
         ],
+        "no-prototype-builtins": "off",
         "quotes": [
             "error",
             "single"
