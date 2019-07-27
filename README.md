@@ -7,12 +7,12 @@
 [![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![Join the chat at https://gitter.im/alecxe/eslint-plugin-protractor](https://badges.gitter.im/alecxe/eslint-plugin-protractor.svg)](https://gitter.im/alecxe/eslint-plugin-protractor?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Maintenance Status](https://img.shields.io/github/last-commit/alecxe/eslint-plugin-protractor.svg)](https://github.com/alecxe/eslint-plugin-protractor/pulse)
 
 [![Code Climate](https://codeclimate.com/github/alecxe/eslint-plugin-protractor/badges/gpa.svg)](https://codeclimate.com/github/alecxe/eslint-plugin-protractor)
 [![Package Quality](http://npm.packagequality.com/shield/eslint-plugin-protractor.svg)](http://packagequality.com/#?package=eslint-plugin-protractor)
 [![Coverage Status](https://coveralls.io/repos/github/alecxe/eslint-plugin-protractor/badge.svg?branch=master)](https://coveralls.io/github/alecxe/eslint-plugin-protractor?branch=master)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](https://github.com/feross/standard)
-[![Dependency Status](https://dependencyci.com/github/alecxe/eslint-plugin-protractor/badge)](https://dependencyci.com/github/alecxe/eslint-plugin-protractor)
 
 > ESLint rules for Protractor
 
