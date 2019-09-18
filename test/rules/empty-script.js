@@ -10,7 +10,9 @@ eslintTester.run('empty-script', rule, {
     'browser.executeScript("var a = 1;");',
     'browser.executeAsyncScript("var a = 1;");',
     'var tag = browser.executeScript("return arguments[0].tagName", el);',
-    'browser.executeAsyncScript("var callback = arguments[arguments.length - 1];");'
+    'browser.executeAsyncScript("var callback = arguments[arguments.length - 1];");',
+    'var script = "var a = 1"; browser.executeScript(clientScript);',
+    'function clientScript(){ return 1; }; browser.executeScript(clientScript);'
   ],
 
   invalid: [
